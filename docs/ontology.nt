@@ -1,0 +1,836 @@
+<http://www.semanticweb.org/posy/ontologies/2026/2/untitled-ontology-13> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Ontology> .
+<http://www.semanticweb.org/posy/ontologies/2026/2/untitled-ontology-13> <http://www.w3.org/2000/01/rdf-schema#comment> "Se procede a transformar las clases, propiedades de objeto, propiedades de datos, restricciones e instancias desarrollada en el apartado anterior. La implementación sigue los requisitos establecidos en la práctica, utilizando exclusivamente vocabulario en inglés y anotando todos los recursos mediante rdfs:label y rdfs:comment." .
+<http://www.semanticweb.org/posy/ontologies/2026/2/untitled-ontology-13> <http://www.w3.org/2000/01/rdf-schema#label> "European Medical Devices Vigilance And Control Ontology" .
+# 
+# 
+# #################################################################
+# #
+# #    Object Properties
+# #
+# #################################################################
+# 
+# 
+# http://www.semanticweb.org/posy/ontologies/2026/2/untitled-ontology-13#affectsDevice
+<http://www.semanticweb.org/posy/ontologies/2026/2/untitled-ontology-13#affectsDevice> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://www.semanticweb.org/posy/ontologies/2026/2/untitled-ontology-13#affectsDevice> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#FunctionalProperty> .
+<http://www.semanticweb.org/posy/ontologies/2026/2/untitled-ontology-13#affectsDevice> <http://www.w3.org/2000/01/rdf-schema#domain> <http://www.semanticweb.org/posy/ontologies/2026/2/untitled-ontology-13#Incident> .
+<http://www.semanticweb.org/posy/ontologies/2026/2/untitled-ontology-13#affectsDevice> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.semanticweb.org/posy/ontologies/2026/2/untitled-ontology-13#MedicalDevice> .
+<http://www.semanticweb.org/posy/ontologies/2026/2/untitled-ontology-13#affectsDevice> <http://www.w3.org/2000/01/rdf-schema#comment> "Relates an incident to the medical device." .
+<http://www.semanticweb.org/posy/ontologies/2026/2/untitled-ontology-13#affectsDevice> <http://www.w3.org/2000/01/rdf-schema#label> "affects devices" .
+# 
+# http://www.semanticweb.org/posy/ontologies/2026/2/untitled-ontology-13#affectsDeviceType
+<http://www.semanticweb.org/posy/ontologies/2026/2/untitled-ontology-13#affectsDeviceType> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://www.semanticweb.org/posy/ontologies/2026/2/untitled-ontology-13#affectsDeviceType> <http://www.w3.org/2000/01/rdf-schema#domain> <http://www.semanticweb.org/posy/ontologies/2026/2/untitled-ontology-13#Risk> .
+<http://www.semanticweb.org/posy/ontologies/2026/2/untitled-ontology-13#affectsDeviceType> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.semanticweb.org/posy/ontologies/2026/2/untitled-ontology-13#DeviceType> .
+<http://www.semanticweb.org/posy/ontologies/2026/2/untitled-ontology-13#affectsDeviceType> <http://www.w3.org/2000/01/rdf-schema#comment> "Relates a risk to the type of devices that can be affected by it." .
+<http://www.semanticweb.org/posy/ontologies/2026/2/untitled-ontology-13#affectsDeviceType> <http://www.w3.org/2000/01/rdf-schema#label> "affects device type" .
+# 
+# http://www.semanticweb.org/posy/ontologies/2026/2/untitled-ontology-13#deviceHasAssociatedRisk
+<http://www.semanticweb.org/posy/ontologies/2026/2/untitled-ontology-13#deviceHasAssociatedRisk> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://www.semanticweb.org/posy/ontologies/2026/2/untitled-ontology-13#deviceHasAssociatedRisk> <http://www.w3.org/2000/01/rdf-schema#domain> <http://www.semanticweb.org/posy/ontologies/2026/2/untitled-ontology-13#MedicalDevice> .
+<http://www.semanticweb.org/posy/ontologies/2026/2/untitled-ontology-13#deviceHasAssociatedRisk> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.semanticweb.org/posy/ontologies/2026/2/untitled-ontology-13#Risk> .
+<http://www.semanticweb.org/posy/ontologies/2026/2/untitled-ontology-13#deviceHasAssociatedRisk> <http://www.w3.org/2000/01/rdf-schema#comment> "New Objecte create to resolve SRWL rules." .
+<http://www.semanticweb.org/posy/ontologies/2026/2/untitled-ontology-13#deviceHasAssociatedRisk> <http://www.w3.org/2000/01/rdf-schema#label> "device has associated risk" .
+# 
+# http://www.semanticweb.org/posy/ontologies/2026/2/untitled-ontology-13#hasActionType
+<http://www.semanticweb.org/posy/ontologies/2026/2/untitled-ontology-13#hasActionType> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://www.semanticweb.org/posy/ontologies/2026/2/untitled-ontology-13#hasActionType> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#FunctionalProperty> .
+<http://www.semanticweb.org/posy/ontologies/2026/2/untitled-ontology-13#hasActionType> <http://www.w3.org/2000/01/rdf-schema#domain> <http://www.semanticweb.org/posy/ontologies/2026/2/untitled-ontology-13#FSCA> .
+<http://www.semanticweb.org/posy/ontologies/2026/2/untitled-ontology-13#hasActionType> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.semanticweb.org/posy/ontologies/2026/2/untitled-ontology-13#ActionType> .
+<http://www.semanticweb.org/posy/ontologies/2026/2/untitled-ontology-13#hasActionType> <http://www.w3.org/2000/01/rdf-schema#comment> "Relates a field safety corrective action to its action type." .
+<http://www.semanticweb.org/posy/ontologies/2026/2/untitled-ontology-13#hasActionType> <http://www.w3.org/2000/01/rdf-schema#label> "has action type" .
+# 
+# http://www.semanticweb.org/posy/ontologies/2026/2/untitled-ontology-13#hasDeviceType
+<http://www.semanticweb.org/posy/ontologies/2026/2/untitled-ontology-13#hasDeviceType> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://www.semanticweb.org/posy/ontologies/2026/2/untitled-ontology-13#hasDeviceType> <http://www.w3.org/2000/01/rdf-schema#domain> <http://www.semanticweb.org/posy/ontologies/2026/2/untitled-ontology-13#MedicalDevice> .
+<http://www.semanticweb.org/posy/ontologies/2026/2/untitled-ontology-13#hasDeviceType> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.semanticweb.org/posy/ontologies/2026/2/untitled-ontology-13#DeviceType> .
+<http://www.semanticweb.org/posy/ontologies/2026/2/untitled-ontology-13#hasDeviceType> <http://www.w3.org/2000/01/rdf-schema#comment> "Relates a medical device to device type classification." .
+<http://www.semanticweb.org/posy/ontologies/2026/2/untitled-ontology-13#hasDeviceType> <http://www.w3.org/2000/01/rdf-schema#label> "has device type" .
+# 
+# http://www.semanticweb.org/posy/ontologies/2026/2/untitled-ontology-13#hasIncidentType
+<http://www.semanticweb.org/posy/ontologies/2026/2/untitled-ontology-13#hasIncidentType> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://www.semanticweb.org/posy/ontologies/2026/2/untitled-ontology-13#hasIncidentType> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#FunctionalProperty> .
+<http://www.semanticweb.org/posy/ontologies/2026/2/untitled-ontology-13#hasIncidentType> <http://www.w3.org/2000/01/rdf-schema#domain> <http://www.semanticweb.org/posy/ontologies/2026/2/untitled-ontology-13#Incident> .
+<http://www.semanticweb.org/posy/ontologies/2026/2/untitled-ontology-13#hasIncidentType> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.semanticweb.org/posy/ontologies/2026/2/untitled-ontology-13#IncidentType> .
+<http://www.semanticweb.org/posy/ontologies/2026/2/untitled-ontology-13#hasIncidentType> <http://www.w3.org/2000/01/rdf-schema#comment> "Relates if an incident has a incident type." .
+<http://www.semanticweb.org/posy/ontologies/2026/2/untitled-ontology-13#hasIncidentType> <http://www.w3.org/2000/01/rdf-schema#label> "has incident type" .
+# 
+# http://www.semanticweb.org/posy/ontologies/2026/2/untitled-ontology-13#hasManufacturer
+<http://www.semanticweb.org/posy/ontologies/2026/2/untitled-ontology-13#hasManufacturer> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://www.semanticweb.org/posy/ontologies/2026/2/untitled-ontology-13#hasManufacturer> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#FunctionalProperty> .
+<http://www.semanticweb.org/posy/ontologies/2026/2/untitled-ontology-13#hasManufacturer> <http://www.w3.org/2000/01/rdf-schema#domain> <http://www.semanticweb.org/posy/ontologies/2026/2/untitled-ontology-13#MedicalDevice> .
+<http://www.semanticweb.org/posy/ontologies/2026/2/untitled-ontology-13#hasManufacturer> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.semanticweb.org/posy/ontologies/2026/2/untitled-ontology-13#Manufacturer> .
+<http://www.semanticweb.org/posy/ontologies/2026/2/untitled-ontology-13#hasManufacturer> <http://www.w3.org/2000/01/rdf-schema#comment> "Relates a medical device to its manufacturer." .
+<http://www.semanticweb.org/posy/ontologies/2026/2/untitled-ontology-13#hasManufacturer> <http://www.w3.org/2000/01/rdf-schema#label> "has manufacturer" .
+# 
+# http://www.semanticweb.org/posy/ontologies/2026/2/untitled-ontology-13#hasOutcomeType
+<http://www.semanticweb.org/posy/ontologies/2026/2/untitled-ontology-13#hasOutcomeType> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://www.semanticweb.org/posy/ontologies/2026/2/untitled-ontology-13#hasOutcomeType> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#FunctionalProperty> .
+<http://www.semanticweb.org/posy/ontologies/2026/2/untitled-ontology-13#hasOutcomeType> <http://www.w3.org/2000/01/rdf-schema#domain> <http://www.semanticweb.org/posy/ontologies/2026/2/untitled-ontology-13#Incident> .
+<http://www.semanticweb.org/posy/ontologies/2026/2/untitled-ontology-13#hasOutcomeType> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.semanticweb.org/posy/ontologies/2026/2/untitled-ontology-13#OutcomeType> .
+<http://www.semanticweb.org/posy/ontologies/2026/2/untitled-ontology-13#hasOutcomeType> <http://www.w3.org/2000/01/rdf-schema#comment> "Relates an incident to the outcome classification associated with it." .
+<http://www.semanticweb.org/posy/ontologies/2026/2/untitled-ontology-13#hasOutcomeType> <http://www.w3.org/2000/01/rdf-schema#label> "has outcome type" .
+# 
+# http://www.semanticweb.org/posy/ontologies/2026/2/untitled-ontology-13#hasPatientSex
+<http://www.semanticweb.org/posy/ontologies/2026/2/untitled-ontology-13#hasPatientSex> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://www.semanticweb.org/posy/ontologies/2026/2/untitled-ontology-13#hasPatientSex> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#FunctionalProperty> .
+<http://www.semanticweb.org/posy/ontologies/2026/2/untitled-ontology-13#hasPatientSex> <http://www.w3.org/2000/01/rdf-schema#domain> <http://www.semanticweb.org/posy/ontologies/2026/2/untitled-ontology-13#Incident> .
+<http://www.semanticweb.org/posy/ontologies/2026/2/untitled-ontology-13#hasPatientSex> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.semanticweb.org/posy/ontologies/2026/2/untitled-ontology-13#PatientSex> .
+<http://www.semanticweb.org/posy/ontologies/2026/2/untitled-ontology-13#hasPatientSex> <http://www.w3.org/2000/01/rdf-schema#comment> "Relates an incident to the sex category of the affected patient." .
+<http://www.semanticweb.org/posy/ontologies/2026/2/untitled-ontology-13#hasPatientSex> <http://www.w3.org/2000/01/rdf-schema#label> "has patient sex" .
+# 
+# http://www.semanticweb.org/posy/ontologies/2026/2/untitled-ontology-13#hasProbabilityLevel
+<http://www.semanticweb.org/posy/ontologies/2026/2/untitled-ontology-13#hasProbabilityLevel> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://www.semanticweb.org/posy/ontologies/2026/2/untitled-ontology-13#hasProbabilityLevel> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#FunctionalProperty> .
+<http://www.semanticweb.org/posy/ontologies/2026/2/untitled-ontology-13#hasProbabilityLevel> <http://www.w3.org/2000/01/rdf-schema#domain> <http://www.semanticweb.org/posy/ontologies/2026/2/untitled-ontology-13#Risk> .
+<http://www.semanticweb.org/posy/ontologies/2026/2/untitled-ontology-13#hasProbabilityLevel> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.semanticweb.org/posy/ontologies/2026/2/untitled-ontology-13#ProbabilityLevel> .
+<http://www.semanticweb.org/posy/ontologies/2026/2/untitled-ontology-13#hasProbabilityLevel> <http://www.w3.org/2000/01/rdf-schema#comment> "Relates a risk to its probability level." .
+<http://www.semanticweb.org/posy/ontologies/2026/2/untitled-ontology-13#hasProbabilityLevel> <http://www.w3.org/2000/01/rdf-schema#label> "has probability level" .
+# 
+# http://www.semanticweb.org/posy/ontologies/2026/2/untitled-ontology-13#hasRisk
+<http://www.semanticweb.org/posy/ontologies/2026/2/untitled-ontology-13#hasRisk> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://www.semanticweb.org/posy/ontologies/2026/2/untitled-ontology-13#hasRisk> <http://www.w3.org/2000/01/rdf-schema#domain> <http://www.semanticweb.org/posy/ontologies/2026/2/untitled-ontology-13#Incident> .
+<http://www.semanticweb.org/posy/ontologies/2026/2/untitled-ontology-13#hasRisk> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.semanticweb.org/posy/ontologies/2026/2/untitled-ontology-13#Risk> .
+<http://www.semanticweb.org/posy/ontologies/2026/2/untitled-ontology-13#hasRisk> <http://www.w3.org/2000/01/rdf-schema#comment> "Relates an incident to the risk associated." .
+<http://www.semanticweb.org/posy/ontologies/2026/2/untitled-ontology-13#hasRisk> <http://www.w3.org/2000/01/rdf-schema#label> "has risk" .
+# 
+# http://www.semanticweb.org/posy/ontologies/2026/2/untitled-ontology-13#hasRiskCategory
+<http://www.semanticweb.org/posy/ontologies/2026/2/untitled-ontology-13#hasRiskCategory> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://www.semanticweb.org/posy/ontologies/2026/2/untitled-ontology-13#hasRiskCategory> <http://www.w3.org/2000/01/rdf-schema#subPropertyOf> <http://www.w3.org/2002/07/owl#topObjectProperty> .
+<http://www.semanticweb.org/posy/ontologies/2026/2/untitled-ontology-13#hasRiskCategory> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#FunctionalProperty> .
+<http://www.semanticweb.org/posy/ontologies/2026/2/untitled-ontology-13#hasRiskCategory> <http://www.w3.org/2000/01/rdf-schema#domain> <http://www.semanticweb.org/posy/ontologies/2026/2/untitled-ontology-13#Risk> .
+<http://www.semanticweb.org/posy/ontologies/2026/2/untitled-ontology-13#hasRiskCategory> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.semanticweb.org/posy/ontologies/2026/2/untitled-ontology-13#RiskCategory> .
+<http://www.semanticweb.org/posy/ontologies/2026/2/untitled-ontology-13#hasRiskCategory> <http://www.w3.org/2000/01/rdf-schema#comment> "Relates a risk to its risk category classification." .
+<http://www.semanticweb.org/posy/ontologies/2026/2/untitled-ontology-13#hasRiskCategory> <http://www.w3.org/2000/01/rdf-schema#label> "has risk category" .
+# 
+# http://www.semanticweb.org/posy/ontologies/2026/2/untitled-ontology-13#hasRiskClass
+<http://www.semanticweb.org/posy/ontologies/2026/2/untitled-ontology-13#hasRiskClass> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://www.semanticweb.org/posy/ontologies/2026/2/untitled-ontology-13#hasRiskClass> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#FunctionalProperty> .
+<http://www.semanticweb.org/posy/ontologies/2026/2/untitled-ontology-13#hasRiskClass> <http://www.w3.org/2000/01/rdf-schema#domain> <http://www.semanticweb.org/posy/ontologies/2026/2/untitled-ontology-13#MedicalDevice> .
+<http://www.semanticweb.org/posy/ontologies/2026/2/untitled-ontology-13#hasRiskClass> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.semanticweb.org/posy/ontologies/2026/2/untitled-ontology-13#RiskClass> .
+<http://www.semanticweb.org/posy/ontologies/2026/2/untitled-ontology-13#hasRiskClass> <http://www.w3.org/2000/01/rdf-schema#comment> "Relates a medical device to risk class." .
+<http://www.semanticweb.org/posy/ontologies/2026/2/untitled-ontology-13#hasRiskClass> <http://www.w3.org/2000/01/rdf-schema#label> "has risk class" .
+# 
+# http://www.semanticweb.org/posy/ontologies/2026/2/untitled-ontology-13#hasRiskType
+<http://www.semanticweb.org/posy/ontologies/2026/2/untitled-ontology-13#hasRiskType> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://www.semanticweb.org/posy/ontologies/2026/2/untitled-ontology-13#hasRiskType> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#FunctionalProperty> .
+<http://www.semanticweb.org/posy/ontologies/2026/2/untitled-ontology-13#hasRiskType> <http://www.w3.org/2000/01/rdf-schema#domain> <http://www.semanticweb.org/posy/ontologies/2026/2/untitled-ontology-13#Risk> .
+<http://www.semanticweb.org/posy/ontologies/2026/2/untitled-ontology-13#hasRiskType> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.semanticweb.org/posy/ontologies/2026/2/untitled-ontology-13#RiskType> .
+<http://www.semanticweb.org/posy/ontologies/2026/2/untitled-ontology-13#hasRiskType> <http://www.w3.org/2000/01/rdf-schema#comment> "Relates a risk to its risk type classification." .
+<http://www.semanticweb.org/posy/ontologies/2026/2/untitled-ontology-13#hasRiskType> <http://www.w3.org/2000/01/rdf-schema#label> "has risk type" .
+# 
+# http://www.semanticweb.org/posy/ontologies/2026/2/untitled-ontology-13#hasScope
+<http://www.semanticweb.org/posy/ontologies/2026/2/untitled-ontology-13#hasScope> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://www.semanticweb.org/posy/ontologies/2026/2/untitled-ontology-13#hasScope> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#FunctionalProperty> .
+<http://www.semanticweb.org/posy/ontologies/2026/2/untitled-ontology-13#hasScope> <http://www.w3.org/2000/01/rdf-schema#domain> <http://www.semanticweb.org/posy/ontologies/2026/2/untitled-ontology-13#FSCA> .
+<http://www.semanticweb.org/posy/ontologies/2026/2/untitled-ontology-13#hasScope> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.semanticweb.org/posy/ontologies/2026/2/untitled-ontology-13#FSCAScope> .
+<http://www.semanticweb.org/posy/ontologies/2026/2/untitled-ontology-13#hasScope> <http://www.w3.org/2000/01/rdf-schema#comment> "Relates a field safety corrective action to its scope." .
+<http://www.semanticweb.org/posy/ontologies/2026/2/untitled-ontology-13#hasScope> <http://www.w3.org/2000/01/rdf-schema#label> "has scope" .
+# 
+# http://www.semanticweb.org/posy/ontologies/2026/2/untitled-ontology-13#hasSeverityLevel
+<http://www.semanticweb.org/posy/ontologies/2026/2/untitled-ontology-13#hasSeverityLevel> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://www.semanticweb.org/posy/ontologies/2026/2/untitled-ontology-13#hasSeverityLevel> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#FunctionalProperty> .
+<http://www.semanticweb.org/posy/ontologies/2026/2/untitled-ontology-13#hasSeverityLevel> <http://www.w3.org/2000/01/rdf-schema#domain> <http://www.semanticweb.org/posy/ontologies/2026/2/untitled-ontology-13#Risk> .
+<http://www.semanticweb.org/posy/ontologies/2026/2/untitled-ontology-13#hasSeverityLevel> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.semanticweb.org/posy/ontologies/2026/2/untitled-ontology-13#SeverityLevel> .
+<http://www.semanticweb.org/posy/ontologies/2026/2/untitled-ontology-13#hasSeverityLevel> <http://www.w3.org/2000/01/rdf-schema#comment> "Relates a risk to its severity level." .
+<http://www.semanticweb.org/posy/ontologies/2026/2/untitled-ontology-13#hasSeverityLevel> <http://www.w3.org/2000/01/rdf-schema#label> "has severity level" .
+# 
+# http://www.semanticweb.org/posy/ontologies/2026/2/untitled-ontology-13#hasStatus
+<http://www.semanticweb.org/posy/ontologies/2026/2/untitled-ontology-13#hasStatus> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://www.semanticweb.org/posy/ontologies/2026/2/untitled-ontology-13#hasStatus> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#FunctionalProperty> .
+<http://www.semanticweb.org/posy/ontologies/2026/2/untitled-ontology-13#hasStatus> <http://www.w3.org/2000/01/rdf-schema#domain> <http://www.semanticweb.org/posy/ontologies/2026/2/untitled-ontology-13#FSCA> .
+<http://www.semanticweb.org/posy/ontologies/2026/2/untitled-ontology-13#hasStatus> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.semanticweb.org/posy/ontologies/2026/2/untitled-ontology-13#FSCAStatus> .
+<http://www.semanticweb.org/posy/ontologies/2026/2/untitled-ontology-13#hasStatus> <http://www.w3.org/2000/01/rdf-schema#comment> "Relates a field safety corrective action to its current status." .
+<http://www.semanticweb.org/posy/ontologies/2026/2/untitled-ontology-13#hasStatus> <http://www.w3.org/2000/01/rdf-schema#label> "has status" .
+# 
+# http://www.semanticweb.org/posy/ontologies/2026/2/untitled-ontology-13#locatedInCountry
+<http://www.semanticweb.org/posy/ontologies/2026/2/untitled-ontology-13#locatedInCountry> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://www.semanticweb.org/posy/ontologies/2026/2/untitled-ontology-13#locatedInCountry> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#FunctionalProperty> .
+<http://www.semanticweb.org/posy/ontologies/2026/2/untitled-ontology-13#locatedInCountry> <http://www.w3.org/2000/01/rdf-schema#domain> <http://www.semanticweb.org/posy/ontologies/2026/2/untitled-ontology-13#Manufacturer> .
+<http://www.semanticweb.org/posy/ontologies/2026/2/untitled-ontology-13#locatedInCountry> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.semanticweb.org/posy/ontologies/2026/2/untitled-ontology-13#Country> .
+<http://www.semanticweb.org/posy/ontologies/2026/2/untitled-ontology-13#locatedInCountry> <http://www.w3.org/2000/01/rdf-schema#comment> "Relates a manufacturer to the country where it is located." .
+<http://www.semanticweb.org/posy/ontologies/2026/2/untitled-ontology-13#locatedInCountry> <http://www.w3.org/2000/01/rdf-schema#label> "located in country" .
+# 
+# http://www.semanticweb.org/posy/ontologies/2026/2/untitled-ontology-13#manufacturerReportedRisk
+<http://www.semanticweb.org/posy/ontologies/2026/2/untitled-ontology-13#manufacturerReportedRisk> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://www.semanticweb.org/posy/ontologies/2026/2/untitled-ontology-13#manufacturerReportedRisk> <http://www.w3.org/2000/01/rdf-schema#domain> <http://www.semanticweb.org/posy/ontologies/2026/2/untitled-ontology-13#Manufacturer> .
+<http://www.semanticweb.org/posy/ontologies/2026/2/untitled-ontology-13#manufacturerReportedRisk> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.semanticweb.org/posy/ontologies/2026/2/untitled-ontology-13#Risk> .
+<http://www.semanticweb.org/posy/ontologies/2026/2/untitled-ontology-13#manufacturerReportedRisk> <http://www.w3.org/2000/01/rdf-schema#comment> "New Objecte create to resolve SRWL rules." .
+<http://www.semanticweb.org/posy/ontologies/2026/2/untitled-ontology-13#manufacturerReportedRisk> <http://www.w3.org/2000/01/rdf-schema#label> "manufacturer reported risk" .
+# 
+# http://www.semanticweb.org/posy/ontologies/2026/2/untitled-ontology-13#registeredWithAuthority
+<http://www.semanticweb.org/posy/ontologies/2026/2/untitled-ontology-13#registeredWithAuthority> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://www.semanticweb.org/posy/ontologies/2026/2/untitled-ontology-13#registeredWithAuthority> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#FunctionalProperty> .
+<http://www.semanticweb.org/posy/ontologies/2026/2/untitled-ontology-13#registeredWithAuthority> <http://www.w3.org/2000/01/rdf-schema#domain> <http://www.semanticweb.org/posy/ontologies/2026/2/untitled-ontology-13#Manufacturer> .
+<http://www.semanticweb.org/posy/ontologies/2026/2/untitled-ontology-13#registeredWithAuthority> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.semanticweb.org/posy/ontologies/2026/2/untitled-ontology-13#CompetentAuthority> .
+<http://www.semanticweb.org/posy/ontologies/2026/2/untitled-ontology-13#registeredWithAuthority> <http://www.w3.org/2000/01/rdf-schema#comment> "Relates a manufacturer to the competent authority with which it is registered." .
+<http://www.semanticweb.org/posy/ontologies/2026/2/untitled-ontology-13#registeredWithAuthority> <http://www.w3.org/2000/01/rdf-schema#label> "registered with authority" .
+# 
+# http://www.semanticweb.org/posy/ontologies/2026/2/untitled-ontology-13#regulatedUnder
+<http://www.semanticweb.org/posy/ontologies/2026/2/untitled-ontology-13#regulatedUnder> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://www.semanticweb.org/posy/ontologies/2026/2/untitled-ontology-13#regulatedUnder> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#FunctionalProperty> .
+<http://www.semanticweb.org/posy/ontologies/2026/2/untitled-ontology-13#regulatedUnder> <http://www.w3.org/2000/01/rdf-schema#domain> <http://www.semanticweb.org/posy/ontologies/2026/2/untitled-ontology-13#MedicalDevice> .
+<http://www.semanticweb.org/posy/ontologies/2026/2/untitled-ontology-13#regulatedUnder> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.semanticweb.org/posy/ontologies/2026/2/untitled-ontology-13#RegulatoryFramework> .
+<http://www.semanticweb.org/posy/ontologies/2026/2/untitled-ontology-13#regulatedUnder> <http://www.w3.org/2000/01/rdf-schema#comment> "Relates a medical devices to regulatory framework" .
+<http://www.semanticweb.org/posy/ontologies/2026/2/untitled-ontology-13#regulatedUnder> <http://www.w3.org/2000/01/rdf-schema#label> "regulated under" .
+# 
+# http://www.semanticweb.org/posy/ontologies/2026/2/untitled-ontology-13#relatesToIncident
+<http://www.semanticweb.org/posy/ontologies/2026/2/untitled-ontology-13#relatesToIncident> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://www.semanticweb.org/posy/ontologies/2026/2/untitled-ontology-13#relatesToIncident> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#FunctionalProperty> .
+<http://www.semanticweb.org/posy/ontologies/2026/2/untitled-ontology-13#relatesToIncident> <http://www.w3.org/2000/01/rdf-schema#domain> <http://www.semanticweb.org/posy/ontologies/2026/2/untitled-ontology-13#FSCA> .
+<http://www.semanticweb.org/posy/ontologies/2026/2/untitled-ontology-13#relatesToIncident> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.semanticweb.org/posy/ontologies/2026/2/untitled-ontology-13#Incident> .
+<http://www.semanticweb.org/posy/ontologies/2026/2/untitled-ontology-13#relatesToIncident> <http://www.w3.org/2000/01/rdf-schema#comment> "Relates to incident of FSCA" .
+<http://www.semanticweb.org/posy/ontologies/2026/2/untitled-ontology-13#relatesToIncident> <http://www.w3.org/2000/01/rdf-schema#label> "relates to incident" .
+# 
+# http://www.semanticweb.org/posy/ontologies/2026/2/untitled-ontology-13#reportedBy
+<http://www.semanticweb.org/posy/ontologies/2026/2/untitled-ontology-13#reportedBy> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://www.semanticweb.org/posy/ontologies/2026/2/untitled-ontology-13#reportedBy> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#FunctionalProperty> .
+<http://www.semanticweb.org/posy/ontologies/2026/2/untitled-ontology-13#reportedBy> <http://www.w3.org/2000/01/rdf-schema#domain> <http://www.semanticweb.org/posy/ontologies/2026/2/untitled-ontology-13#Incident> .
+<http://www.semanticweb.org/posy/ontologies/2026/2/untitled-ontology-13#reportedBy> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.semanticweb.org/posy/ontologies/2026/2/untitled-ontology-13#Manufacturer> .
+<http://www.semanticweb.org/posy/ontologies/2026/2/untitled-ontology-13#reportedBy> <http://www.w3.org/2000/01/rdf-schema#comment> "Relates a inicident to manufacturer." .
+<http://www.semanticweb.org/posy/ontologies/2026/2/untitled-ontology-13#reportedBy> <http://www.w3.org/2000/01/rdf-schema#label> "reported by" .
+# 
+# http://www.semanticweb.org/posy/ontologies/2026/2/untitled-ontology-13#reportedInCountry
+<http://www.semanticweb.org/posy/ontologies/2026/2/untitled-ontology-13#reportedInCountry> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://www.semanticweb.org/posy/ontologies/2026/2/untitled-ontology-13#reportedInCountry> <http://www.w3.org/2000/01/rdf-schema#subPropertyOf> <http://www.w3.org/2002/07/owl#topObjectProperty> .
+<http://www.semanticweb.org/posy/ontologies/2026/2/untitled-ontology-13#reportedInCountry> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#FunctionalProperty> .
+<http://www.semanticweb.org/posy/ontologies/2026/2/untitled-ontology-13#reportedInCountry> <http://www.w3.org/2000/01/rdf-schema#domain> <http://www.semanticweb.org/posy/ontologies/2026/2/untitled-ontology-13#Incident> .
+<http://www.semanticweb.org/posy/ontologies/2026/2/untitled-ontology-13#reportedInCountry> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.semanticweb.org/posy/ontologies/2026/2/untitled-ontology-13#Country> .
+<http://www.semanticweb.org/posy/ontologies/2026/2/untitled-ontology-13#reportedInCountry> <http://www.w3.org/2000/01/rdf-schema#comment> "Relates a incident to the country where it was reported." .
+<http://www.semanticweb.org/posy/ontologies/2026/2/untitled-ontology-13#reportedInCountry> <http://www.w3.org/2000/01/rdf-schema#label> "reported in country" .
+# 
+# http://www.semanticweb.org/posy/ontologies/2026/2/untitled-ontology-13#targetDevice
+<http://www.semanticweb.org/posy/ontologies/2026/2/untitled-ontology-13#targetDevice> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://www.semanticweb.org/posy/ontologies/2026/2/untitled-ontology-13#targetDevice> <http://www.w3.org/2000/01/rdf-schema#domain> <http://www.semanticweb.org/posy/ontologies/2026/2/untitled-ontology-13#FSCA> .
+<http://www.semanticweb.org/posy/ontologies/2026/2/untitled-ontology-13#targetDevice> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.semanticweb.org/posy/ontologies/2026/2/untitled-ontology-13#MedicalDevice> .
+<http://www.semanticweb.org/posy/ontologies/2026/2/untitled-ontology-13#targetDevice> <http://www.w3.org/2000/01/rdf-schema#comment> "New Objecte create to resolve SRWL rules." .
+<http://www.semanticweb.org/posy/ontologies/2026/2/untitled-ontology-13#targetDevice> <http://www.w3.org/2000/01/rdf-schema#label> "target device" .
+# 
+# 
+# 
+# #################################################################
+# #
+# #    Data properties
+# #
+# #################################################################
+# 
+# 
+# http://www.semanticweb.org/posy/ontologies/2026/2/untitled-ontology-13#hasActionDate
+<http://www.semanticweb.org/posy/ontologies/2026/2/untitled-ontology-13#hasActionDate> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<http://www.semanticweb.org/posy/ontologies/2026/2/untitled-ontology-13#hasActionDate> <http://www.w3.org/2000/01/rdf-schema#domain> <http://www.semanticweb.org/posy/ontologies/2026/2/untitled-ontology-13#FSCA> .
+<http://www.semanticweb.org/posy/ontologies/2026/2/untitled-ontology-13#hasActionDate> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#dateTime> .
+<http://www.semanticweb.org/posy/ontologies/2026/2/untitled-ontology-13#hasActionDate> <http://www.w3.org/2000/01/rdf-schema#comment> "Stores the date on which a field safety corrective action was initiated." .
+<http://www.semanticweb.org/posy/ontologies/2026/2/untitled-ontology-13#hasActionDate> <http://www.w3.org/2000/01/rdf-schema#label> "has action date" .
+# 
+# http://www.semanticweb.org/posy/ontologies/2026/2/untitled-ontology-13#hasAuthorizationNumber
+<http://www.semanticweb.org/posy/ontologies/2026/2/untitled-ontology-13#hasAuthorizationNumber> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<http://www.semanticweb.org/posy/ontologies/2026/2/untitled-ontology-13#hasAuthorizationNumber> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#FunctionalProperty> .
+<http://www.semanticweb.org/posy/ontologies/2026/2/untitled-ontology-13#hasAuthorizationNumber> <http://www.w3.org/2000/01/rdf-schema#domain> <http://www.semanticweb.org/posy/ontologies/2026/2/untitled-ontology-13#Manufacturer> .
+<http://www.semanticweb.org/posy/ontologies/2026/2/untitled-ontology-13#hasAuthorizationNumber> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#string> .
+<http://www.semanticweb.org/posy/ontologies/2026/2/untitled-ontology-13#hasAuthorizationNumber> <http://www.w3.org/2000/01/rdf-schema#comment> "Stores the authorization number of a manufacturer." .
+<http://www.semanticweb.org/posy/ontologies/2026/2/untitled-ontology-13#hasAuthorizationNumber> <http://www.w3.org/2000/01/rdf-schema#label> "has authorization number" .
+# 
+# http://www.semanticweb.org/posy/ontologies/2026/2/untitled-ontology-13#hasClosureDate
+<http://www.semanticweb.org/posy/ontologies/2026/2/untitled-ontology-13#hasClosureDate> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<http://www.semanticweb.org/posy/ontologies/2026/2/untitled-ontology-13#hasClosureDate> <http://www.w3.org/2000/01/rdf-schema#domain> <http://www.semanticweb.org/posy/ontologies/2026/2/untitled-ontology-13#FSCA> .
+<http://www.semanticweb.org/posy/ontologies/2026/2/untitled-ontology-13#hasClosureDate> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#dateTime> .
+<http://www.semanticweb.org/posy/ontologies/2026/2/untitled-ontology-13#hasClosureDate> <http://www.w3.org/2000/01/rdf-schema#comment> "Stores the closure date of a field safety corrective action." .
+<http://www.semanticweb.org/posy/ontologies/2026/2/untitled-ontology-13#hasClosureDate> <http://www.w3.org/2000/01/rdf-schema#label> "has closure date" .
+# 
+# http://www.semanticweb.org/posy/ontologies/2026/2/untitled-ontology-13#hasContactEmail
+<http://www.semanticweb.org/posy/ontologies/2026/2/untitled-ontology-13#hasContactEmail> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<http://www.semanticweb.org/posy/ontologies/2026/2/untitled-ontology-13#hasContactEmail> <http://www.w3.org/2000/01/rdf-schema#domain> <http://www.semanticweb.org/posy/ontologies/2026/2/untitled-ontology-13#Manufacturer> .
+<http://www.semanticweb.org/posy/ontologies/2026/2/untitled-ontology-13#hasContactEmail> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#string> .
+<http://www.semanticweb.org/posy/ontologies/2026/2/untitled-ontology-13#hasContactEmail> <http://www.w3.org/2000/01/rdf-schema#comment> "Stores email of a manufacturer." .
+<http://www.semanticweb.org/posy/ontologies/2026/2/untitled-ontology-13#hasContactEmail> <http://www.w3.org/2000/01/rdf-schema#label> "has contact email" .
+# 
+# http://www.semanticweb.org/posy/ontologies/2026/2/untitled-ontology-13#hasCorrectiveActionTaken
+<http://www.semanticweb.org/posy/ontologies/2026/2/untitled-ontology-13#hasCorrectiveActionTaken> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<http://www.semanticweb.org/posy/ontologies/2026/2/untitled-ontology-13#hasCorrectiveActionTaken> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#FunctionalProperty> .
+<http://www.semanticweb.org/posy/ontologies/2026/2/untitled-ontology-13#hasCorrectiveActionTaken> <http://www.w3.org/2000/01/rdf-schema#domain> <http://www.semanticweb.org/posy/ontologies/2026/2/untitled-ontology-13#Incident> .
+<http://www.semanticweb.org/posy/ontologies/2026/2/untitled-ontology-13#hasCorrectiveActionTaken> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#boolean> .
+<http://www.semanticweb.org/posy/ontologies/2026/2/untitled-ontology-13#hasCorrectiveActionTaken> <http://www.w3.org/2000/01/rdf-schema#comment> "Indicates whether a corrective action has already been taken for an incident." .
+<http://www.semanticweb.org/posy/ontologies/2026/2/untitled-ontology-13#hasCorrectiveActionTaken> <http://www.w3.org/2000/01/rdf-schema#label> "has corrective action taken" .
+# 
+# http://www.semanticweb.org/posy/ontologies/2026/2/untitled-ontology-13#hasCountriesAffectedText
+<http://www.semanticweb.org/posy/ontologies/2026/2/untitled-ontology-13#hasCountriesAffectedText> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<http://www.semanticweb.org/posy/ontologies/2026/2/untitled-ontology-13#hasCountriesAffectedText> <http://www.w3.org/2000/01/rdf-schema#domain> <http://www.semanticweb.org/posy/ontologies/2026/2/untitled-ontology-13#FSCA> .
+<http://www.semanticweb.org/posy/ontologies/2026/2/untitled-ontology-13#hasCountriesAffectedText> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#string> .
+<http://www.semanticweb.org/posy/ontologies/2026/2/untitled-ontology-13#hasCountriesAffectedText> <http://www.w3.org/2000/01/rdf-schema#comment> "Stores the textual information about the countries affected by a field safety corrective action." .
+<http://www.semanticweb.org/posy/ontologies/2026/2/untitled-ontology-13#hasCountriesAffectedText> <http://www.w3.org/2000/01/rdf-schema#label> "has countries affected text" .
+# 
+# http://www.semanticweb.org/posy/ontologies/2026/2/untitled-ontology-13#hasDetectionDate
+<http://www.semanticweb.org/posy/ontologies/2026/2/untitled-ontology-13#hasDetectionDate> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<http://www.semanticweb.org/posy/ontologies/2026/2/untitled-ontology-13#hasDetectionDate> <http://www.w3.org/2000/01/rdf-schema#domain> <http://www.semanticweb.org/posy/ontologies/2026/2/untitled-ontology-13#Incident> .
+<http://www.semanticweb.org/posy/ontologies/2026/2/untitled-ontology-13#hasDetectionDate> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#dateTime> .
+<http://www.semanticweb.org/posy/ontologies/2026/2/untitled-ontology-13#hasDetectionDate> <http://www.w3.org/2000/01/rdf-schema#comment> "Stores the date on which the incident event occurred." .
+<http://www.semanticweb.org/posy/ontologies/2026/2/untitled-ontology-13#hasDetectionDate> <http://www.w3.org/2000/01/rdf-schema#label> "has detection date" .
+# 
+# http://www.semanticweb.org/posy/ontologies/2026/2/untitled-ontology-13#hasDeviceID
+<http://www.semanticweb.org/posy/ontologies/2026/2/untitled-ontology-13#hasDeviceID> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<http://www.semanticweb.org/posy/ontologies/2026/2/untitled-ontology-13#hasDeviceID> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#FunctionalProperty> .
+<http://www.semanticweb.org/posy/ontologies/2026/2/untitled-ontology-13#hasDeviceID> <http://www.w3.org/2000/01/rdf-schema#domain> <http://www.semanticweb.org/posy/ontologies/2026/2/untitled-ontology-13#MedicalDevice> .
+<http://www.semanticweb.org/posy/ontologies/2026/2/untitled-ontology-13#hasDeviceID> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#string> .
+<http://www.semanticweb.org/posy/ontologies/2026/2/untitled-ontology-13#hasDeviceID> <http://www.w3.org/2000/01/rdf-schema#comment> "Stores the identifier of a medical device." .
+<http://www.semanticweb.org/posy/ontologies/2026/2/untitled-ontology-13#hasDeviceID> <http://www.w3.org/2000/01/rdf-schema#label> "has device ID" .
+# 
+# http://www.semanticweb.org/posy/ontologies/2026/2/untitled-ontology-13#hasDeviceName
+<http://www.semanticweb.org/posy/ontologies/2026/2/untitled-ontology-13#hasDeviceName> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<http://www.semanticweb.org/posy/ontologies/2026/2/untitled-ontology-13#hasDeviceName> <http://www.w3.org/2000/01/rdf-schema#domain> <http://www.semanticweb.org/posy/ontologies/2026/2/untitled-ontology-13#MedicalDevice> .
+<http://www.semanticweb.org/posy/ontologies/2026/2/untitled-ontology-13#hasDeviceName> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#string> .
+<http://www.semanticweb.org/posy/ontologies/2026/2/untitled-ontology-13#hasDeviceName> <http://www.w3.org/2000/01/rdf-schema#comment> "Stores the commercial name of a medical device." .
+<http://www.semanticweb.org/posy/ontologies/2026/2/untitled-ontology-13#hasDeviceName> <http://www.w3.org/2000/01/rdf-schema#label> "has device name" .
+# 
+# http://www.semanticweb.org/posy/ontologies/2026/2/untitled-ontology-13#hasDevicesAffectedCount
+<http://www.semanticweb.org/posy/ontologies/2026/2/untitled-ontology-13#hasDevicesAffectedCount> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<http://www.semanticweb.org/posy/ontologies/2026/2/untitled-ontology-13#hasDevicesAffectedCount> <http://www.w3.org/2000/01/rdf-schema#domain> <http://www.semanticweb.org/posy/ontologies/2026/2/untitled-ontology-13#FSCA> .
+<http://www.semanticweb.org/posy/ontologies/2026/2/untitled-ontology-13#hasDevicesAffectedCount> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#string> .
+<http://www.semanticweb.org/posy/ontologies/2026/2/untitled-ontology-13#hasDevicesAffectedCount> <http://www.w3.org/2000/01/rdf-schema#comment> "Stores the number of devices affected by a field safety corrective action." .
+<http://www.semanticweb.org/posy/ontologies/2026/2/untitled-ontology-13#hasDevicesAffectedCount> <http://www.w3.org/2000/01/rdf-schema#label> "has devices affected count" .
+# 
+# http://www.semanticweb.org/posy/ontologies/2026/2/untitled-ontology-13#hasEudamedFSCAReference
+<http://www.semanticweb.org/posy/ontologies/2026/2/untitled-ontology-13#hasEudamedFSCAReference> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<http://www.semanticweb.org/posy/ontologies/2026/2/untitled-ontology-13#hasEudamedFSCAReference> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#FunctionalProperty> .
+<http://www.semanticweb.org/posy/ontologies/2026/2/untitled-ontology-13#hasEudamedFSCAReference> <http://www.w3.org/2000/01/rdf-schema#domain> <http://www.semanticweb.org/posy/ontologies/2026/2/untitled-ontology-13#FSCA> .
+<http://www.semanticweb.org/posy/ontologies/2026/2/untitled-ontology-13#hasEudamedFSCAReference> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#string> .
+<http://www.semanticweb.org/posy/ontologies/2026/2/untitled-ontology-13#hasEudamedFSCAReference> <http://www.w3.org/2000/01/rdf-schema#comment> "Stores the EUDAMED reference code of a field safety corrective action." .
+<http://www.semanticweb.org/posy/ontologies/2026/2/untitled-ontology-13#hasEudamedFSCAReference> <http://www.w3.org/2000/01/rdf-schema#label> "has EUDAMED FSCA reference" .
+# 
+# http://www.semanticweb.org/posy/ontologies/2026/2/untitled-ontology-13#hasEudamedIncidentReference
+<http://www.semanticweb.org/posy/ontologies/2026/2/untitled-ontology-13#hasEudamedIncidentReference> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<http://www.semanticweb.org/posy/ontologies/2026/2/untitled-ontology-13#hasEudamedIncidentReference> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#FunctionalProperty> .
+<http://www.semanticweb.org/posy/ontologies/2026/2/untitled-ontology-13#hasEudamedIncidentReference> <http://www.w3.org/2000/01/rdf-schema#domain> <http://www.semanticweb.org/posy/ontologies/2026/2/untitled-ontology-13#Incident> .
+<http://www.semanticweb.org/posy/ontologies/2026/2/untitled-ontology-13#hasEudamedIncidentReference> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#string> .
+<http://www.semanticweb.org/posy/ontologies/2026/2/untitled-ontology-13#hasEudamedIncidentReference> <http://www.w3.org/2000/01/rdf-schema#comment> "Stores the EUDAMED reference code of an incident." .
+<http://www.semanticweb.org/posy/ontologies/2026/2/untitled-ontology-13#hasEudamedIncidentReference> <http://www.w3.org/2000/01/rdf-schema#label> "has Eudamed incident reference" .
+# 
+# http://www.semanticweb.org/posy/ontologies/2026/2/untitled-ontology-13#hasEudamedSRN
+<http://www.semanticweb.org/posy/ontologies/2026/2/untitled-ontology-13#hasEudamedSRN> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<http://www.semanticweb.org/posy/ontologies/2026/2/untitled-ontology-13#hasEudamedSRN> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#FunctionalProperty> .
+<http://www.semanticweb.org/posy/ontologies/2026/2/untitled-ontology-13#hasEudamedSRN> <http://www.w3.org/2000/01/rdf-schema#domain> <http://www.semanticweb.org/posy/ontologies/2026/2/untitled-ontology-13#Manufacturer> .
+<http://www.semanticweb.org/posy/ontologies/2026/2/untitled-ontology-13#hasEudamedSRN> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#string> .
+<http://www.semanticweb.org/posy/ontologies/2026/2/untitled-ontology-13#hasEudamedSRN> <http://www.w3.org/2000/01/rdf-schema#comment> "Stores  EUDAMED number of a manufacturer." .
+<http://www.semanticweb.org/posy/ontologies/2026/2/untitled-ontology-13#hasEudamedSRN> <http://www.w3.org/2000/01/rdf-schema#label> "has EUDAMED SRN" .
+# 
+# http://www.semanticweb.org/posy/ontologies/2026/2/untitled-ontology-13#hasEventDate
+<http://www.semanticweb.org/posy/ontologies/2026/2/untitled-ontology-13#hasEventDate> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<http://www.semanticweb.org/posy/ontologies/2026/2/untitled-ontology-13#hasEventDate> <http://www.w3.org/2000/01/rdf-schema#domain> <http://www.semanticweb.org/posy/ontologies/2026/2/untitled-ontology-13#Incident> .
+<http://www.semanticweb.org/posy/ontologies/2026/2/untitled-ontology-13#hasEventDate> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#dateTime> .
+<http://www.semanticweb.org/posy/ontologies/2026/2/untitled-ontology-13#hasEventDate> <http://www.w3.org/2000/01/rdf-schema#comment> "Stores the date on which the incident event occurred." .
+<http://www.semanticweb.org/posy/ontologies/2026/2/untitled-ontology-13#hasEventDate> <http://www.w3.org/2000/01/rdf-schema#label> "has event date" .
+# 
+# http://www.semanticweb.org/posy/ontologies/2026/2/untitled-ontology-13#hasFSCADescription
+<http://www.semanticweb.org/posy/ontologies/2026/2/untitled-ontology-13#hasFSCADescription> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<http://www.semanticweb.org/posy/ontologies/2026/2/untitled-ontology-13#hasFSCADescription> <http://www.w3.org/2000/01/rdf-schema#domain> <http://www.semanticweb.org/posy/ontologies/2026/2/untitled-ontology-13#FSCA> .
+<http://www.semanticweb.org/posy/ontologies/2026/2/untitled-ontology-13#hasFSCADescription> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#string> .
+<http://www.semanticweb.org/posy/ontologies/2026/2/untitled-ontology-13#hasFSCADescription> <http://www.w3.org/2000/01/rdf-schema#comment> "Stores the textual description of a field safety corrective action." .
+<http://www.semanticweb.org/posy/ontologies/2026/2/untitled-ontology-13#hasFSCADescription> <http://www.w3.org/2000/01/rdf-schema#label> "has FSCA description" .
+# 
+# http://www.semanticweb.org/posy/ontologies/2026/2/untitled-ontology-13#hasFSCAID
+<http://www.semanticweb.org/posy/ontologies/2026/2/untitled-ontology-13#hasFSCAID> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<http://www.semanticweb.org/posy/ontologies/2026/2/untitled-ontology-13#hasFSCAID> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#FunctionalProperty> .
+<http://www.semanticweb.org/posy/ontologies/2026/2/untitled-ontology-13#hasFSCAID> <http://www.w3.org/2000/01/rdf-schema#domain> <http://www.semanticweb.org/posy/ontologies/2026/2/untitled-ontology-13#FSCA> .
+<http://www.semanticweb.org/posy/ontologies/2026/2/untitled-ontology-13#hasFSCAID> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#string> .
+<http://www.semanticweb.org/posy/ontologies/2026/2/untitled-ontology-13#hasFSCAID> <http://www.w3.org/2000/01/rdf-schema#comment> "Store FSCA ID." .
+<http://www.semanticweb.org/posy/ontologies/2026/2/untitled-ontology-13#hasFSCAID> <http://www.w3.org/2000/01/rdf-schema#label> "has FSCA ID" .
+# 
+# http://www.semanticweb.org/posy/ontologies/2026/2/untitled-ontology-13#hasIMDRFCode
+<http://www.semanticweb.org/posy/ontologies/2026/2/untitled-ontology-13#hasIMDRFCode> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<http://www.semanticweb.org/posy/ontologies/2026/2/untitled-ontology-13#hasIMDRFCode> <http://www.w3.org/2000/01/rdf-schema#domain> <http://www.semanticweb.org/posy/ontologies/2026/2/untitled-ontology-13#Risk> .
+<http://www.semanticweb.org/posy/ontologies/2026/2/untitled-ontology-13#hasIMDRFCode> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#string> .
+<http://www.semanticweb.org/posy/ontologies/2026/2/untitled-ontology-13#hasIMDRFCode> <http://www.w3.org/2000/01/rdf-schema#comment> "Stores the IMDRF code assigned to a risk." .
+<http://www.semanticweb.org/posy/ontologies/2026/2/untitled-ontology-13#hasIMDRFCode> <http://www.w3.org/2000/01/rdf-schema#label> "has IMDRF code" .
+# 
+# http://www.semanticweb.org/posy/ontologies/2026/2/untitled-ontology-13#hasIncidentDescription
+<http://www.semanticweb.org/posy/ontologies/2026/2/untitled-ontology-13#hasIncidentDescription> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<http://www.semanticweb.org/posy/ontologies/2026/2/untitled-ontology-13#hasIncidentDescription> <http://www.w3.org/2000/01/rdf-schema#domain> <http://www.semanticweb.org/posy/ontologies/2026/2/untitled-ontology-13#Incident> .
+<http://www.semanticweb.org/posy/ontologies/2026/2/untitled-ontology-13#hasIncidentDescription> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#string> .
+<http://www.semanticweb.org/posy/ontologies/2026/2/untitled-ontology-13#hasIncidentDescription> <http://www.w3.org/2000/01/rdf-schema#comment> "Stores the textual description of an incident." .
+<http://www.semanticweb.org/posy/ontologies/2026/2/untitled-ontology-13#hasIncidentDescription> <http://www.w3.org/2000/01/rdf-schema#label> "has incident description" .
+# 
+# http://www.semanticweb.org/posy/ontologies/2026/2/untitled-ontology-13#hasIncidentID
+<http://www.semanticweb.org/posy/ontologies/2026/2/untitled-ontology-13#hasIncidentID> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<http://www.semanticweb.org/posy/ontologies/2026/2/untitled-ontology-13#hasIncidentID> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#FunctionalProperty> .
+<http://www.semanticweb.org/posy/ontologies/2026/2/untitled-ontology-13#hasIncidentID> <http://www.w3.org/2000/01/rdf-schema#domain> <http://www.semanticweb.org/posy/ontologies/2026/2/untitled-ontology-13#Incident> .
+<http://www.semanticweb.org/posy/ontologies/2026/2/untitled-ontology-13#hasIncidentID> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#string> .
+<http://www.semanticweb.org/posy/ontologies/2026/2/untitled-ontology-13#hasIncidentID> <http://www.w3.org/2000/01/rdf-schema#comment> "Stores the identifier of an incident." .
+<http://www.semanticweb.org/posy/ontologies/2026/2/untitled-ontology-13#hasIncidentID> <http://www.w3.org/2000/01/rdf-schema#label> "has incident ID" .
+# 
+# http://www.semanticweb.org/posy/ontologies/2026/2/untitled-ontology-13#hasIntendedPurpose
+<http://www.semanticweb.org/posy/ontologies/2026/2/untitled-ontology-13#hasIntendedPurpose> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<http://www.semanticweb.org/posy/ontologies/2026/2/untitled-ontology-13#hasIntendedPurpose> <http://www.w3.org/2000/01/rdf-schema#domain> <http://www.semanticweb.org/posy/ontologies/2026/2/untitled-ontology-13#MedicalDevice> .
+<http://www.semanticweb.org/posy/ontologies/2026/2/untitled-ontology-13#hasIntendedPurpose> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#string> .
+<http://www.semanticweb.org/posy/ontologies/2026/2/untitled-ontology-13#hasIntendedPurpose> <http://www.w3.org/2000/01/rdf-schema#comment> "Stores the intended purpose of a medical device." .
+<http://www.semanticweb.org/posy/ontologies/2026/2/untitled-ontology-13#hasIntendedPurpose> <http://www.w3.org/2000/01/rdf-schema#label> "has intended purpose" .
+# 
+# http://www.semanticweb.org/posy/ontologies/2026/2/untitled-ontology-13#hasManufacturerID
+<http://www.semanticweb.org/posy/ontologies/2026/2/untitled-ontology-13#hasManufacturerID> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<http://www.semanticweb.org/posy/ontologies/2026/2/untitled-ontology-13#hasManufacturerID> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#FunctionalProperty> .
+<http://www.semanticweb.org/posy/ontologies/2026/2/untitled-ontology-13#hasManufacturerID> <http://www.w3.org/2000/01/rdf-schema#domain> <http://www.semanticweb.org/posy/ontologies/2026/2/untitled-ontology-13#Manufacturer> .
+<http://www.semanticweb.org/posy/ontologies/2026/2/untitled-ontology-13#hasManufacturerID> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#string> .
+<http://www.semanticweb.org/posy/ontologies/2026/2/untitled-ontology-13#hasManufacturerID> <http://www.w3.org/2000/01/rdf-schema#comment> "Stores the identifier of a manufacturer." .
+<http://www.semanticweb.org/posy/ontologies/2026/2/untitled-ontology-13#hasManufacturerID> <http://www.w3.org/2000/01/rdf-schema#label> "has manufacturer ID" .
+# 
+# http://www.semanticweb.org/posy/ontologies/2026/2/untitled-ontology-13#hasManufacturerName
+<http://www.semanticweb.org/posy/ontologies/2026/2/untitled-ontology-13#hasManufacturerName> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<http://www.semanticweb.org/posy/ontologies/2026/2/untitled-ontology-13#hasManufacturerName> <http://www.w3.org/2000/01/rdf-schema#domain> <http://www.semanticweb.org/posy/ontologies/2026/2/untitled-ontology-13#Manufacturer> .
+<http://www.semanticweb.org/posy/ontologies/2026/2/untitled-ontology-13#hasManufacturerName> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#string> .
+<http://www.semanticweb.org/posy/ontologies/2026/2/untitled-ontology-13#hasManufacturerName> <http://www.w3.org/2000/01/rdf-schema#comment> "Stores manufacturer name." .
+<http://www.semanticweb.org/posy/ontologies/2026/2/untitled-ontology-13#hasManufacturerName> <http://www.w3.org/2000/01/rdf-schema#label> "has manufacturer name" .
+# 
+# http://www.semanticweb.org/posy/ontologies/2026/2/untitled-ontology-13#hasPatientAge
+<http://www.semanticweb.org/posy/ontologies/2026/2/untitled-ontology-13#hasPatientAge> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<http://www.semanticweb.org/posy/ontologies/2026/2/untitled-ontology-13#hasPatientAge> <http://www.w3.org/2000/01/rdf-schema#domain> <http://www.semanticweb.org/posy/ontologies/2026/2/untitled-ontology-13#Incident> .
+<http://www.semanticweb.org/posy/ontologies/2026/2/untitled-ontology-13#hasPatientAge> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#integer> .
+<http://www.semanticweb.org/posy/ontologies/2026/2/untitled-ontology-13#hasPatientAge> <http://www.w3.org/2000/01/rdf-schema#comment> "Stores the age of the patient involved in an incident." .
+<http://www.semanticweb.org/posy/ontologies/2026/2/untitled-ontology-13#hasPatientAge> <http://www.w3.org/2000/01/rdf-schema#label> "has patient age" .
+# 
+# http://www.semanticweb.org/posy/ontologies/2026/2/untitled-ontology-13#hasReportDate
+<http://www.semanticweb.org/posy/ontologies/2026/2/untitled-ontology-13#hasReportDate> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<http://www.semanticweb.org/posy/ontologies/2026/2/untitled-ontology-13#hasReportDate> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#FunctionalProperty> .
+<http://www.semanticweb.org/posy/ontologies/2026/2/untitled-ontology-13#hasReportDate> <http://www.w3.org/2000/01/rdf-schema#domain> <http://www.semanticweb.org/posy/ontologies/2026/2/untitled-ontology-13#Incident> .
+<http://www.semanticweb.org/posy/ontologies/2026/2/untitled-ontology-13#hasReportDate> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#dateTime> .
+<http://www.semanticweb.org/posy/ontologies/2026/2/untitled-ontology-13#hasReportDate> <http://www.w3.org/2000/01/rdf-schema#comment> "Stores the report date of an incident." .
+<http://www.semanticweb.org/posy/ontologies/2026/2/untitled-ontology-13#hasReportDate> <http://www.w3.org/2000/01/rdf-schema#label> "has report date" .
+# 
+# http://www.semanticweb.org/posy/ontologies/2026/2/untitled-ontology-13#hasRiskDescription
+<http://www.semanticweb.org/posy/ontologies/2026/2/untitled-ontology-13#hasRiskDescription> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<http://www.semanticweb.org/posy/ontologies/2026/2/untitled-ontology-13#hasRiskDescription> <http://www.w3.org/2000/01/rdf-schema#domain> <http://www.semanticweb.org/posy/ontologies/2026/2/untitled-ontology-13#Risk> .
+<http://www.semanticweb.org/posy/ontologies/2026/2/untitled-ontology-13#hasRiskDescription> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#string> .
+<http://www.semanticweb.org/posy/ontologies/2026/2/untitled-ontology-13#hasRiskDescription> <http://www.w3.org/2000/01/rdf-schema#comment> "Stores the textual description of a risk." .
+<http://www.semanticweb.org/posy/ontologies/2026/2/untitled-ontology-13#hasRiskDescription> <http://www.w3.org/2000/01/rdf-schema#label> "has risk description" .
+# 
+# http://www.semanticweb.org/posy/ontologies/2026/2/untitled-ontology-13#hasRiskID
+<http://www.semanticweb.org/posy/ontologies/2026/2/untitled-ontology-13#hasRiskID> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<http://www.semanticweb.org/posy/ontologies/2026/2/untitled-ontology-13#hasRiskID> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#FunctionalProperty> .
+<http://www.semanticweb.org/posy/ontologies/2026/2/untitled-ontology-13#hasRiskID> <http://www.w3.org/2000/01/rdf-schema#domain> <http://www.semanticweb.org/posy/ontologies/2026/2/untitled-ontology-13#Risk> .
+<http://www.semanticweb.org/posy/ontologies/2026/2/untitled-ontology-13#hasRiskID> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#string> .
+<http://www.semanticweb.org/posy/ontologies/2026/2/untitled-ontology-13#hasRiskID> <http://www.w3.org/2000/01/rdf-schema#comment> "Stores the identifier of a risk." .
+<http://www.semanticweb.org/posy/ontologies/2026/2/untitled-ontology-13#hasRiskID> <http://www.w3.org/2000/01/rdf-schema#label> "has risk ID" .
+# 
+# http://www.semanticweb.org/posy/ontologies/2026/2/untitled-ontology-13#hasRiskName
+<http://www.semanticweb.org/posy/ontologies/2026/2/untitled-ontology-13#hasRiskName> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<http://www.semanticweb.org/posy/ontologies/2026/2/untitled-ontology-13#hasRiskName> <http://www.w3.org/2000/01/rdf-schema#domain> <http://www.semanticweb.org/posy/ontologies/2026/2/untitled-ontology-13#Risk> .
+<http://www.semanticweb.org/posy/ontologies/2026/2/untitled-ontology-13#hasRiskName> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#string> .
+<http://www.semanticweb.org/posy/ontologies/2026/2/untitled-ontology-13#hasRiskName> <http://www.w3.org/2000/01/rdf-schema#comment> "Stores the name of a risk." .
+<http://www.semanticweb.org/posy/ontologies/2026/2/untitled-ontology-13#hasRiskName> <http://www.w3.org/2000/01/rdf-schema#label> "has risk name" .
+# 
+# http://www.semanticweb.org/posy/ontologies/2026/2/untitled-ontology-13#hasUDIDI
+<http://www.semanticweb.org/posy/ontologies/2026/2/untitled-ontology-13#hasUDIDI> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<http://www.semanticweb.org/posy/ontologies/2026/2/untitled-ontology-13#hasUDIDI> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#FunctionalProperty> .
+<http://www.semanticweb.org/posy/ontologies/2026/2/untitled-ontology-13#hasUDIDI> <http://www.w3.org/2000/01/rdf-schema#domain> <http://www.semanticweb.org/posy/ontologies/2026/2/untitled-ontology-13#MedicalDevice> .
+<http://www.semanticweb.org/posy/ontologies/2026/2/untitled-ontology-13#hasUDIDI> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#string> .
+<http://www.semanticweb.org/posy/ontologies/2026/2/untitled-ontology-13#hasUDIDI> <http://www.w3.org/2000/01/rdf-schema#comment> "Stores the UDI-DI code of a medical device." .
+<http://www.semanticweb.org/posy/ontologies/2026/2/untitled-ontology-13#hasUDIDI> <http://www.w3.org/2000/01/rdf-schema#label> "has UDI-DI" .
+# 
+# http://www.semanticweb.org/posy/ontologies/2026/2/untitled-ontology-13#isActive
+<http://www.semanticweb.org/posy/ontologies/2026/2/untitled-ontology-13#isActive> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<http://www.semanticweb.org/posy/ontologies/2026/2/untitled-ontology-13#isActive> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#FunctionalProperty> .
+<http://www.semanticweb.org/posy/ontologies/2026/2/untitled-ontology-13#isActive> <http://www.w3.org/2000/01/rdf-schema#domain> <http://www.semanticweb.org/posy/ontologies/2026/2/untitled-ontology-13#MedicalDevice> .
+<http://www.semanticweb.org/posy/ontologies/2026/2/untitled-ontology-13#isActive> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#boolean> .
+<http://www.semanticweb.org/posy/ontologies/2026/2/untitled-ontology-13#isActive> <http://www.w3.org/2000/01/rdf-schema#comment> "Indicates whether the medical device is active." .
+<http://www.semanticweb.org/posy/ontologies/2026/2/untitled-ontology-13#isActive> <http://www.w3.org/2000/01/rdf-schema#label> "is active" .
+# 
+# http://www.semanticweb.org/posy/ontologies/2026/2/untitled-ontology-13#isIVD
+<http://www.semanticweb.org/posy/ontologies/2026/2/untitled-ontology-13#isIVD> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<http://www.semanticweb.org/posy/ontologies/2026/2/untitled-ontology-13#isIVD> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#FunctionalProperty> .
+<http://www.semanticweb.org/posy/ontologies/2026/2/untitled-ontology-13#isIVD> <http://www.w3.org/2000/01/rdf-schema#domain> <http://www.semanticweb.org/posy/ontologies/2026/2/untitled-ontology-13#MedicalDevice> .
+<http://www.semanticweb.org/posy/ontologies/2026/2/untitled-ontology-13#isIVD> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#boolean> .
+<http://www.semanticweb.org/posy/ontologies/2026/2/untitled-ontology-13#isIVD> <http://www.w3.org/2000/01/rdf-schema#comment> "Indicates whether the medical device is an in vitro diagnostic device." .
+<http://www.semanticweb.org/posy/ontologies/2026/2/untitled-ontology-13#isIVD> <http://www.w3.org/2000/01/rdf-schema#label> "is IVD" .
+# 
+# http://www.semanticweb.org/posy/ontologies/2026/2/untitled-ontology-13#isImplantable
+<http://www.semanticweb.org/posy/ontologies/2026/2/untitled-ontology-13#isImplantable> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<http://www.semanticweb.org/posy/ontologies/2026/2/untitled-ontology-13#isImplantable> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#FunctionalProperty> .
+<http://www.semanticweb.org/posy/ontologies/2026/2/untitled-ontology-13#isImplantable> <http://www.w3.org/2000/01/rdf-schema#domain> <http://www.semanticweb.org/posy/ontologies/2026/2/untitled-ontology-13#MedicalDevice> .
+<http://www.semanticweb.org/posy/ontologies/2026/2/untitled-ontology-13#isImplantable> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#boolean> .
+<http://www.semanticweb.org/posy/ontologies/2026/2/untitled-ontology-13#isImplantable> <http://www.w3.org/2000/01/rdf-schema#comment> "Indicates whether the medical device is implantable." .
+<http://www.semanticweb.org/posy/ontologies/2026/2/untitled-ontology-13#isImplantable> <http://www.w3.org/2000/01/rdf-schema#label> "is implantable" .
+# 
+# http://www.semanticweb.org/posy/ontologies/2026/2/untitled-ontology-13#isReusable
+<http://www.semanticweb.org/posy/ontologies/2026/2/untitled-ontology-13#isReusable> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<http://www.semanticweb.org/posy/ontologies/2026/2/untitled-ontology-13#isReusable> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#FunctionalProperty> .
+<http://www.semanticweb.org/posy/ontologies/2026/2/untitled-ontology-13#isReusable> <http://www.w3.org/2000/01/rdf-schema#domain> <http://www.semanticweb.org/posy/ontologies/2026/2/untitled-ontology-13#MedicalDevice> .
+<http://www.semanticweb.org/posy/ontologies/2026/2/untitled-ontology-13#isReusable> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#boolean> .
+<http://www.semanticweb.org/posy/ontologies/2026/2/untitled-ontology-13#isReusable> <http://www.w3.org/2000/01/rdf-schema#comment> "Indicates whether the medical device is reusable." .
+<http://www.semanticweb.org/posy/ontologies/2026/2/untitled-ontology-13#isReusable> <http://www.w3.org/2000/01/rdf-schema#label> "is reusable" .
+# 
+# 
+# 
+# #################################################################
+# #
+# #    Classes
+# #
+# #################################################################
+# 
+# 
+# http://www.semanticweb.org/posy/ontologies/2026/2/untitled-ontology-13#ActionType
+<http://www.semanticweb.org/posy/ontologies/2026/2/untitled-ontology-13#ActionType> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://www.semanticweb.org/posy/ontologies/2026/2/untitled-ontology-13#ActionType> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.semanticweb.org/posy/ontologies/2026/2/untitled-ontology-13#ClassificationEntity> .
+<http://www.semanticweb.org/posy/ontologies/2026/2/untitled-ontology-13#ActionType> <http://www.w3.org/2000/01/rdf-schema#comment> "Action type registration" .
+<http://www.semanticweb.org/posy/ontologies/2026/2/untitled-ontology-13#ActionType> <http://www.w3.org/2000/01/rdf-schema#label> "Action type" .
+# 
+# http://www.semanticweb.org/posy/ontologies/2026/2/untitled-ontology-13#AdministrativeEntity
+<http://www.semanticweb.org/posy/ontologies/2026/2/untitled-ontology-13#AdministrativeEntity> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+# 
+# http://www.semanticweb.org/posy/ontologies/2026/2/untitled-ontology-13#ClassificationEntity
+<http://www.semanticweb.org/posy/ontologies/2026/2/untitled-ontology-13#ClassificationEntity> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+# 
+# http://www.semanticweb.org/posy/ontologies/2026/2/untitled-ontology-13#CompetentAuthority
+<http://www.semanticweb.org/posy/ontologies/2026/2/untitled-ontology-13#CompetentAuthority> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://www.semanticweb.org/posy/ontologies/2026/2/untitled-ontology-13#CompetentAuthority> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.semanticweb.org/posy/ontologies/2026/2/untitled-ontology-13#AdministrativeEntity> .
+<http://www.semanticweb.org/posy/ontologies/2026/2/untitled-ontology-13#CompetentAuthority> <http://www.w3.org/2000/01/rdf-schema#comment> "Competent authority registration" .
+<http://www.semanticweb.org/posy/ontologies/2026/2/untitled-ontology-13#CompetentAuthority> <http://www.w3.org/2000/01/rdf-schema#label> "Competent authority" .
+# 
+# http://www.semanticweb.org/posy/ontologies/2026/2/untitled-ontology-13#Country
+<http://www.semanticweb.org/posy/ontologies/2026/2/untitled-ontology-13#Country> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://www.semanticweb.org/posy/ontologies/2026/2/untitled-ontology-13#Country> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.semanticweb.org/posy/ontologies/2026/2/untitled-ontology-13#AdministrativeEntity> .
+<http://www.semanticweb.org/posy/ontologies/2026/2/untitled-ontology-13#Country> <http://www.w3.org/2000/01/rdf-schema#comment> "Country registration" .
+<http://www.semanticweb.org/posy/ontologies/2026/2/untitled-ontology-13#Country> <http://www.w3.org/2000/01/rdf-schema#label> "Country" .
+# 
+# http://www.semanticweb.org/posy/ontologies/2026/2/untitled-ontology-13#DeviceType
+<http://www.semanticweb.org/posy/ontologies/2026/2/untitled-ontology-13#DeviceType> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://www.semanticweb.org/posy/ontologies/2026/2/untitled-ontology-13#DeviceType> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.semanticweb.org/posy/ontologies/2026/2/untitled-ontology-13#ClassificationEntity> .
+<http://www.semanticweb.org/posy/ontologies/2026/2/untitled-ontology-13#DeviceType> <http://www.w3.org/2000/01/rdf-schema#comment> "Device type registration" .
+<http://www.semanticweb.org/posy/ontologies/2026/2/untitled-ontology-13#DeviceType> <http://www.w3.org/2000/01/rdf-schema#label> "Device type" .
+# 
+# http://www.semanticweb.org/posy/ontologies/2026/2/untitled-ontology-13#FSCA
+<http://www.semanticweb.org/posy/ontologies/2026/2/untitled-ontology-13#FSCA> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://www.semanticweb.org/posy/ontologies/2026/2/untitled-ontology-13#FSCA> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.semanticweb.org/posy/ontologies/2026/2/untitled-ontology-13#MedicalEntity> .
+<http://www.semanticweb.org/posy/ontologies/2026/2/untitled-ontology-13#FSCA> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid1 .
+_:genid1 <http://www.w3.org/2002/07/owl#onClass> <http://www.semanticweb.org/posy/ontologies/2026/2/untitled-ontology-13#Incident> .
+_:genid1 <http://www.w3.org/2002/07/owl#qualifiedCardinality> "1"^^<http://www.w3.org/2001/XMLSchema#nonNegativeInteger> .
+_:genid1 <http://www.w3.org/2002/07/owl#onProperty> <http://www.semanticweb.org/posy/ontologies/2026/2/untitled-ontology-13#relatesToIncident> .
+_:genid1 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+<http://www.semanticweb.org/posy/ontologies/2026/2/untitled-ontology-13#FSCA> <http://www.w3.org/2000/01/rdf-schema#comment> "FSCA registration" .
+<http://www.semanticweb.org/posy/ontologies/2026/2/untitled-ontology-13#FSCA> <http://www.w3.org/2000/01/rdf-schema#label> "FSCA" .
+# 
+# http://www.semanticweb.org/posy/ontologies/2026/2/untitled-ontology-13#FSCAScope
+<http://www.semanticweb.org/posy/ontologies/2026/2/untitled-ontology-13#FSCAScope> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://www.semanticweb.org/posy/ontologies/2026/2/untitled-ontology-13#FSCAScope> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.semanticweb.org/posy/ontologies/2026/2/untitled-ontology-13#ClassificationEntity> .
+<http://www.semanticweb.org/posy/ontologies/2026/2/untitled-ontology-13#FSCAScope> <http://www.w3.org/2000/01/rdf-schema#comment> "FSCA scope registration" .
+<http://www.semanticweb.org/posy/ontologies/2026/2/untitled-ontology-13#FSCAScope> <http://www.w3.org/2000/01/rdf-schema#label> "FSCA scope" .
+# 
+# http://www.semanticweb.org/posy/ontologies/2026/2/untitled-ontology-13#FSCAStatus
+<http://www.semanticweb.org/posy/ontologies/2026/2/untitled-ontology-13#FSCAStatus> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://www.semanticweb.org/posy/ontologies/2026/2/untitled-ontology-13#FSCAStatus> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.semanticweb.org/posy/ontologies/2026/2/untitled-ontology-13#ClassificationEntity> .
+<http://www.semanticweb.org/posy/ontologies/2026/2/untitled-ontology-13#FSCAStatus> <http://www.w3.org/2000/01/rdf-schema#comment> "FSCA status registration" .
+<http://www.semanticweb.org/posy/ontologies/2026/2/untitled-ontology-13#FSCAStatus> <http://www.w3.org/2000/01/rdf-schema#label> "FSCA status" .
+# 
+# http://www.semanticweb.org/posy/ontologies/2026/2/untitled-ontology-13#Incident
+<http://www.semanticweb.org/posy/ontologies/2026/2/untitled-ontology-13#Incident> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://www.semanticweb.org/posy/ontologies/2026/2/untitled-ontology-13#Incident> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.semanticweb.org/posy/ontologies/2026/2/untitled-ontology-13#MedicalEntity> .
+<http://www.semanticweb.org/posy/ontologies/2026/2/untitled-ontology-13#Incident> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid2 .
+_:genid2 <http://www.w3.org/2002/07/owl#onClass> <http://www.semanticweb.org/posy/ontologies/2026/2/untitled-ontology-13#MedicalDevice> .
+_:genid2 <http://www.w3.org/2002/07/owl#qualifiedCardinality> "1"^^<http://www.w3.org/2001/XMLSchema#nonNegativeInteger> .
+_:genid2 <http://www.w3.org/2002/07/owl#onProperty> <http://www.semanticweb.org/posy/ontologies/2026/2/untitled-ontology-13#affectsDevice> .
+_:genid2 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+<http://www.semanticweb.org/posy/ontologies/2026/2/untitled-ontology-13#Incident> <http://www.w3.org/2000/01/rdf-schema#comment> "Incident Registration" .
+<http://www.semanticweb.org/posy/ontologies/2026/2/untitled-ontology-13#Incident> <http://www.w3.org/2000/01/rdf-schema#label> "Incident" .
+# 
+# http://www.semanticweb.org/posy/ontologies/2026/2/untitled-ontology-13#IncidentType
+<http://www.semanticweb.org/posy/ontologies/2026/2/untitled-ontology-13#IncidentType> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://www.semanticweb.org/posy/ontologies/2026/2/untitled-ontology-13#IncidentType> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.semanticweb.org/posy/ontologies/2026/2/untitled-ontology-13#ClassificationEntity> .
+<http://www.semanticweb.org/posy/ontologies/2026/2/untitled-ontology-13#IncidentType> <http://www.w3.org/2000/01/rdf-schema#comment> "Incident type registration" .
+<http://www.semanticweb.org/posy/ontologies/2026/2/untitled-ontology-13#IncidentType> <http://www.w3.org/2000/01/rdf-schema#label> "Incident type" .
+# 
+# http://www.semanticweb.org/posy/ontologies/2026/2/untitled-ontology-13#Manufacturer
+<http://www.semanticweb.org/posy/ontologies/2026/2/untitled-ontology-13#Manufacturer> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://www.semanticweb.org/posy/ontologies/2026/2/untitled-ontology-13#Manufacturer> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.semanticweb.org/posy/ontologies/2026/2/untitled-ontology-13#MedicalEntity> .
+<http://www.semanticweb.org/posy/ontologies/2026/2/untitled-ontology-13#Manufacturer> <http://www.w3.org/2000/01/rdf-schema#comment> "A Manufacturer registration" .
+<http://www.semanticweb.org/posy/ontologies/2026/2/untitled-ontology-13#Manufacturer> <http://www.w3.org/2000/01/rdf-schema#label> "Manufacturer" .
+# 
+# http://www.semanticweb.org/posy/ontologies/2026/2/untitled-ontology-13#MedicalDevice
+<http://www.semanticweb.org/posy/ontologies/2026/2/untitled-ontology-13#MedicalDevice> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://www.semanticweb.org/posy/ontologies/2026/2/untitled-ontology-13#MedicalDevice> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.semanticweb.org/posy/ontologies/2026/2/untitled-ontology-13#MedicalEntity> .
+<http://www.semanticweb.org/posy/ontologies/2026/2/untitled-ontology-13#MedicalDevice> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid3 .
+_:genid3 <http://www.w3.org/2002/07/owl#onClass> <http://www.semanticweb.org/posy/ontologies/2026/2/untitled-ontology-13#Manufacturer> .
+_:genid3 <http://www.w3.org/2002/07/owl#qualifiedCardinality> "1"^^<http://www.w3.org/2001/XMLSchema#nonNegativeInteger> .
+_:genid3 <http://www.w3.org/2002/07/owl#onProperty> <http://www.semanticweb.org/posy/ontologies/2026/2/untitled-ontology-13#hasManufacturer> .
+_:genid3 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+<http://www.semanticweb.org/posy/ontologies/2026/2/untitled-ontology-13#MedicalDevice> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid4 .
+_:genid4 <http://www.w3.org/2002/07/owl#onClass> <http://www.semanticweb.org/posy/ontologies/2026/2/untitled-ontology-13#RiskClass> .
+_:genid4 <http://www.w3.org/2002/07/owl#qualifiedCardinality> "1"^^<http://www.w3.org/2001/XMLSchema#nonNegativeInteger> .
+_:genid4 <http://www.w3.org/2002/07/owl#onProperty> <http://www.semanticweb.org/posy/ontologies/2026/2/untitled-ontology-13#hasRiskClass> .
+_:genid4 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+<http://www.semanticweb.org/posy/ontologies/2026/2/untitled-ontology-13#MedicalDevice> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid5 .
+_:genid5 <http://www.w3.org/2002/07/owl#onClass> <http://www.semanticweb.org/posy/ontologies/2026/2/untitled-ontology-13#RegulatoryFramework> .
+_:genid5 <http://www.w3.org/2002/07/owl#qualifiedCardinality> "1"^^<http://www.w3.org/2001/XMLSchema#nonNegativeInteger> .
+_:genid5 <http://www.w3.org/2002/07/owl#onProperty> <http://www.semanticweb.org/posy/ontologies/2026/2/untitled-ontology-13#regulatedUnder> .
+_:genid5 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+<http://www.semanticweb.org/posy/ontologies/2026/2/untitled-ontology-13#MedicalDevice> <http://www.w3.org/2000/01/rdf-schema#comment> "A medical device registered" .
+<http://www.semanticweb.org/posy/ontologies/2026/2/untitled-ontology-13#MedicalDevice> <http://www.w3.org/2000/01/rdf-schema#label> "Medical device" .
+<http://www.semanticweb.org/posy/ontologies/2026/2/untitled-ontology-13#MedicalDevice> <http://www.w3.org/2000/01/rdf-schema#seeAlso> "https://dbpedia.org/page/Medical_device" .
+# 
+# http://www.semanticweb.org/posy/ontologies/2026/2/untitled-ontology-13#MedicalEntity
+<http://www.semanticweb.org/posy/ontologies/2026/2/untitled-ontology-13#MedicalEntity> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+# 
+# http://www.semanticweb.org/posy/ontologies/2026/2/untitled-ontology-13#OutcomeType
+<http://www.semanticweb.org/posy/ontologies/2026/2/untitled-ontology-13#OutcomeType> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://www.semanticweb.org/posy/ontologies/2026/2/untitled-ontology-13#OutcomeType> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.semanticweb.org/posy/ontologies/2026/2/untitled-ontology-13#AdministrativeEntity> .
+<http://www.semanticweb.org/posy/ontologies/2026/2/untitled-ontology-13#OutcomeType> <http://www.w3.org/2000/01/rdf-schema#comment> "Outcome type registration" .
+<http://www.semanticweb.org/posy/ontologies/2026/2/untitled-ontology-13#OutcomeType> <http://www.w3.org/2000/01/rdf-schema#label> "Outcome type" .
+# 
+# http://www.semanticweb.org/posy/ontologies/2026/2/untitled-ontology-13#PatientSex
+<http://www.semanticweb.org/posy/ontologies/2026/2/untitled-ontology-13#PatientSex> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://www.semanticweb.org/posy/ontologies/2026/2/untitled-ontology-13#PatientSex> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.semanticweb.org/posy/ontologies/2026/2/untitled-ontology-13#AdministrativeEntity> .
+<http://www.semanticweb.org/posy/ontologies/2026/2/untitled-ontology-13#PatientSex> <http://www.w3.org/2000/01/rdf-schema#comment> "Patient sex registration" .
+<http://www.semanticweb.org/posy/ontologies/2026/2/untitled-ontology-13#PatientSex> <http://www.w3.org/2000/01/rdf-schema#label> "Patient sex" .
+# 
+# http://www.semanticweb.org/posy/ontologies/2026/2/untitled-ontology-13#ProbabilityLevel
+<http://www.semanticweb.org/posy/ontologies/2026/2/untitled-ontology-13#ProbabilityLevel> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://www.semanticweb.org/posy/ontologies/2026/2/untitled-ontology-13#ProbabilityLevel> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.semanticweb.org/posy/ontologies/2026/2/untitled-ontology-13#ClassificationEntity> .
+<http://www.semanticweb.org/posy/ontologies/2026/2/untitled-ontology-13#ProbabilityLevel> <http://www.w3.org/2000/01/rdf-schema#comment> "Probability level registration" .
+<http://www.semanticweb.org/posy/ontologies/2026/2/untitled-ontology-13#ProbabilityLevel> <http://www.w3.org/2000/01/rdf-schema#label> "Probability level" .
+# 
+# http://www.semanticweb.org/posy/ontologies/2026/2/untitled-ontology-13#RegulatoryFramework
+<http://www.semanticweb.org/posy/ontologies/2026/2/untitled-ontology-13#RegulatoryFramework> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://www.semanticweb.org/posy/ontologies/2026/2/untitled-ontology-13#RegulatoryFramework> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.semanticweb.org/posy/ontologies/2026/2/untitled-ontology-13#ClassificationEntity> .
+<http://www.semanticweb.org/posy/ontologies/2026/2/untitled-ontology-13#RegulatoryFramework> <http://www.w3.org/2000/01/rdf-schema#comment> "Regulatory framework registration" .
+<http://www.semanticweb.org/posy/ontologies/2026/2/untitled-ontology-13#RegulatoryFramework> <http://www.w3.org/2000/01/rdf-schema#label> "Regulatory framework" .
+# 
+# http://www.semanticweb.org/posy/ontologies/2026/2/untitled-ontology-13#Risk
+<http://www.semanticweb.org/posy/ontologies/2026/2/untitled-ontology-13#Risk> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://www.semanticweb.org/posy/ontologies/2026/2/untitled-ontology-13#Risk> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.semanticweb.org/posy/ontologies/2026/2/untitled-ontology-13#MedicalEntity> .
+<http://www.semanticweb.org/posy/ontologies/2026/2/untitled-ontology-13#Risk> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid6 .
+_:genid6 <http://www.w3.org/2002/07/owl#onClass> <http://www.semanticweb.org/posy/ontologies/2026/2/untitled-ontology-13#ProbabilityLevel> .
+_:genid6 <http://www.w3.org/2002/07/owl#qualifiedCardinality> "1"^^<http://www.w3.org/2001/XMLSchema#nonNegativeInteger> .
+_:genid6 <http://www.w3.org/2002/07/owl#onProperty> <http://www.semanticweb.org/posy/ontologies/2026/2/untitled-ontology-13#hasProbabilityLevel> .
+_:genid6 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+<http://www.semanticweb.org/posy/ontologies/2026/2/untitled-ontology-13#Risk> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid7 .
+_:genid7 <http://www.w3.org/2002/07/owl#onClass> <http://www.semanticweb.org/posy/ontologies/2026/2/untitled-ontology-13#SeverityLevel> .
+_:genid7 <http://www.w3.org/2002/07/owl#qualifiedCardinality> "1"^^<http://www.w3.org/2001/XMLSchema#nonNegativeInteger> .
+_:genid7 <http://www.w3.org/2002/07/owl#onProperty> <http://www.semanticweb.org/posy/ontologies/2026/2/untitled-ontology-13#hasSeverityLevel> .
+_:genid7 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+<http://www.semanticweb.org/posy/ontologies/2026/2/untitled-ontology-13#Risk> <http://www.w3.org/2000/01/rdf-schema#comment> "Risk" .
+<http://www.semanticweb.org/posy/ontologies/2026/2/untitled-ontology-13#Risk> <http://www.w3.org/2000/01/rdf-schema#label> "Risk" .
+# 
+# http://www.semanticweb.org/posy/ontologies/2026/2/untitled-ontology-13#RiskCategory
+<http://www.semanticweb.org/posy/ontologies/2026/2/untitled-ontology-13#RiskCategory> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://www.semanticweb.org/posy/ontologies/2026/2/untitled-ontology-13#RiskCategory> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.semanticweb.org/posy/ontologies/2026/2/untitled-ontology-13#ClassificationEntity> .
+<http://www.semanticweb.org/posy/ontologies/2026/2/untitled-ontology-13#RiskCategory> <http://www.w3.org/2000/01/rdf-schema#comment> "Risk category registration" .
+<http://www.semanticweb.org/posy/ontologies/2026/2/untitled-ontology-13#RiskCategory> <http://www.w3.org/2000/01/rdf-schema#label> "Risk category" .
+# 
+# http://www.semanticweb.org/posy/ontologies/2026/2/untitled-ontology-13#RiskClass
+<http://www.semanticweb.org/posy/ontologies/2026/2/untitled-ontology-13#RiskClass> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://www.semanticweb.org/posy/ontologies/2026/2/untitled-ontology-13#RiskClass> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.semanticweb.org/posy/ontologies/2026/2/untitled-ontology-13#ClassificationEntity> .
+<http://www.semanticweb.org/posy/ontologies/2026/2/untitled-ontology-13#RiskClass> <http://www.w3.org/2000/01/rdf-schema#comment> "Risk class registration" .
+<http://www.semanticweb.org/posy/ontologies/2026/2/untitled-ontology-13#RiskClass> <http://www.w3.org/2000/01/rdf-schema#label> "Risk class" .
+# 
+# http://www.semanticweb.org/posy/ontologies/2026/2/untitled-ontology-13#RiskType
+<http://www.semanticweb.org/posy/ontologies/2026/2/untitled-ontology-13#RiskType> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://www.semanticweb.org/posy/ontologies/2026/2/untitled-ontology-13#RiskType> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.semanticweb.org/posy/ontologies/2026/2/untitled-ontology-13#ClassificationEntity> .
+<http://www.semanticweb.org/posy/ontologies/2026/2/untitled-ontology-13#RiskType> <http://www.w3.org/2000/01/rdf-schema#comment> "Risk type registration" .
+<http://www.semanticweb.org/posy/ontologies/2026/2/untitled-ontology-13#RiskType> <http://www.w3.org/2000/01/rdf-schema#label> "Risk type" .
+# 
+# http://www.semanticweb.org/posy/ontologies/2026/2/untitled-ontology-13#SeverityLevel
+<http://www.semanticweb.org/posy/ontologies/2026/2/untitled-ontology-13#SeverityLevel> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://www.semanticweb.org/posy/ontologies/2026/2/untitled-ontology-13#SeverityLevel> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.semanticweb.org/posy/ontologies/2026/2/untitled-ontology-13#ClassificationEntity> .
+<http://www.semanticweb.org/posy/ontologies/2026/2/untitled-ontology-13#SeverityLevel> <http://www.w3.org/2000/01/rdf-schema#comment> "Severity level registration" .
+<http://www.semanticweb.org/posy/ontologies/2026/2/untitled-ontology-13#SeverityLevel> <http://www.w3.org/2000/01/rdf-schema#label> "Severity level" .
+# 
+# 
+# 
+# #################################################################
+# #
+# #    Individuals
+# #
+# #################################################################
+# 
+# 
+# http://www.semanticweb.org/posy/ontologies/2026/2/untitled-ontology-13#Class_III
+<http://www.semanticweb.org/posy/ontologies/2026/2/untitled-ontology-13#Class_III> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://www.semanticweb.org/posy/ontologies/2026/2/untitled-ontology-13#Class_III> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.semanticweb.org/posy/ontologies/2026/2/untitled-ontology-13#RiskClass> .
+<http://www.semanticweb.org/posy/ontologies/2026/2/untitled-ontology-13#Class_III> <http://www.w3.org/2000/01/rdf-schema#comment> "Risk class -> Class III" .
+<http://www.semanticweb.org/posy/ontologies/2026/2/untitled-ontology-13#Class_III> <http://www.w3.org/2000/01/rdf-schema#label> "Class III" .
+# 
+# http://www.semanticweb.org/posy/ontologies/2026/2/untitled-ontology-13#Critical
+<http://www.semanticweb.org/posy/ontologies/2026/2/untitled-ontology-13#Critical> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://www.semanticweb.org/posy/ontologies/2026/2/untitled-ontology-13#Critical> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.semanticweb.org/posy/ontologies/2026/2/untitled-ontology-13#SeverityLevel> .
+<http://www.semanticweb.org/posy/ontologies/2026/2/untitled-ontology-13#Critical> <http://www.w3.org/2000/01/rdf-schema#comment> "Severity level -> Critical" .
+<http://www.semanticweb.org/posy/ontologies/2026/2/untitled-ontology-13#Critical> <http://www.w3.org/2000/01/rdf-schema#label> "Critical" .
+# 
+# http://www.semanticweb.org/posy/ontologies/2026/2/untitled-ontology-13#DEV-001
+<http://www.semanticweb.org/posy/ontologies/2026/2/untitled-ontology-13#DEV-001> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://www.semanticweb.org/posy/ontologies/2026/2/untitled-ontology-13#DEV-001> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.semanticweb.org/posy/ontologies/2026/2/untitled-ontology-13#MedicalDevice> .
+<http://www.semanticweb.org/posy/ontologies/2026/2/untitled-ontology-13#DEV-001> <http://www.semanticweb.org/posy/ontologies/2026/2/untitled-ontology-13#hasManufacturer> <http://www.semanticweb.org/posy/ontologies/2026/2/untitled-ontology-13#MAN-001> .
+<http://www.semanticweb.org/posy/ontologies/2026/2/untitled-ontology-13#DEV-001> <http://www.semanticweb.org/posy/ontologies/2026/2/untitled-ontology-13#hasRiskClass> <http://www.semanticweb.org/posy/ontologies/2026/2/untitled-ontology-13#Class_III> .
+<http://www.semanticweb.org/posy/ontologies/2026/2/untitled-ontology-13#DEV-001> <http://www.semanticweb.org/posy/ontologies/2026/2/untitled-ontology-13#regulatedUnder> <http://www.semanticweb.org/posy/ontologies/2026/2/untitled-ontology-13#MDR> .
+<http://www.semanticweb.org/posy/ontologies/2026/2/untitled-ontology-13#DEV-001> <http://www.semanticweb.org/posy/ontologies/2026/2/untitled-ontology-13#hasDeviceID> "DEV-001" .
+<http://www.semanticweb.org/posy/ontologies/2026/2/untitled-ontology-13#DEV-001> <http://www.semanticweb.org/posy/ontologies/2026/2/untitled-ontology-13#hasDeviceName> "HeartMate 3 LVAD" .
+<http://www.semanticweb.org/posy/ontologies/2026/2/untitled-ontology-13#DEV-001> <http://www.semanticweb.org/posy/ontologies/2026/2/untitled-ontology-13#isActive> "true"^^<http://www.w3.org/2001/XMLSchema#boolean> .
+<http://www.semanticweb.org/posy/ontologies/2026/2/untitled-ontology-13#DEV-001> <http://www.semanticweb.org/posy/ontologies/2026/2/untitled-ontology-13#isImplantable> "true"^^<http://www.w3.org/2001/XMLSchema#boolean> .
+<http://www.semanticweb.org/posy/ontologies/2026/2/untitled-ontology-13#DEV-001> <http://www.semanticweb.org/posy/ontologies/2026/2/untitled-ontology-13#isReusable> "false"^^<http://www.w3.org/2001/XMLSchema#boolean> .
+<http://www.semanticweb.org/posy/ontologies/2026/2/untitled-ontology-13#DEV-001> <http://www.w3.org/2000/01/rdf-schema#comment> "Example medical device instance." .
+<http://www.semanticweb.org/posy/ontologies/2026/2/untitled-ontology-13#DEV-001> <http://www.w3.org/2000/01/rdf-schema#label> "DEV-001" .
+# 
+# http://www.semanticweb.org/posy/ontologies/2026/2/untitled-ontology-13#FSCA-001
+<http://www.semanticweb.org/posy/ontologies/2026/2/untitled-ontology-13#FSCA-001> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://www.semanticweb.org/posy/ontologies/2026/2/untitled-ontology-13#FSCA-001> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.semanticweb.org/posy/ontologies/2026/2/untitled-ontology-13#FSCA> .
+<http://www.semanticweb.org/posy/ontologies/2026/2/untitled-ontology-13#FSCA-001> <http://www.semanticweb.org/posy/ontologies/2026/2/untitled-ontology-13#hasActionType> <http://www.semanticweb.org/posy/ontologies/2026/2/untitled-ontology-13#Safety_alert> .
+<http://www.semanticweb.org/posy/ontologies/2026/2/untitled-ontology-13#FSCA-001> <http://www.semanticweb.org/posy/ontologies/2026/2/untitled-ontology-13#relatesToIncident> <http://www.semanticweb.org/posy/ontologies/2026/2/untitled-ontology-13#INC-001> .
+<http://www.semanticweb.org/posy/ontologies/2026/2/untitled-ontology-13#FSCA-001> <http://www.semanticweb.org/posy/ontologies/2026/2/untitled-ontology-13#hasFSCAID> "FSCA-001" .
+<http://www.semanticweb.org/posy/ontologies/2026/2/untitled-ontology-13#FSCA-001> <http://www.w3.org/2000/01/rdf-schema#comment> "Example FSCA instance." .
+<http://www.semanticweb.org/posy/ontologies/2026/2/untitled-ontology-13#FSCA-001> <http://www.w3.org/2000/01/rdf-schema#label> "FSCA-001" .
+# 
+# http://www.semanticweb.org/posy/ontologies/2026/2/untitled-ontology-13#INC-001
+<http://www.semanticweb.org/posy/ontologies/2026/2/untitled-ontology-13#INC-001> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://www.semanticweb.org/posy/ontologies/2026/2/untitled-ontology-13#INC-001> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.semanticweb.org/posy/ontologies/2026/2/untitled-ontology-13#Incident> .
+<http://www.semanticweb.org/posy/ontologies/2026/2/untitled-ontology-13#INC-001> <http://www.semanticweb.org/posy/ontologies/2026/2/untitled-ontology-13#affectsDevice> <http://www.semanticweb.org/posy/ontologies/2026/2/untitled-ontology-13#DEV-001> .
+<http://www.semanticweb.org/posy/ontologies/2026/2/untitled-ontology-13#INC-001> <http://www.semanticweb.org/posy/ontologies/2026/2/untitled-ontology-13#hasRisk> <http://www.semanticweb.org/posy/ontologies/2026/2/untitled-ontology-13#RSK-003> .
+<http://www.semanticweb.org/posy/ontologies/2026/2/untitled-ontology-13#INC-001> <http://www.semanticweb.org/posy/ontologies/2026/2/untitled-ontology-13#reportedBy> <http://www.semanticweb.org/posy/ontologies/2026/2/untitled-ontology-13#MAN-001> .
+<http://www.semanticweb.org/posy/ontologies/2026/2/untitled-ontology-13#INC-001> <http://www.semanticweb.org/posy/ontologies/2026/2/untitled-ontology-13#hasIncidentDescription> "Incident related to thrombosis." .
+<http://www.semanticweb.org/posy/ontologies/2026/2/untitled-ontology-13#INC-001> <http://www.semanticweb.org/posy/ontologies/2026/2/untitled-ontology-13#hasIncidentID> "INC-001" .
+<http://www.semanticweb.org/posy/ontologies/2026/2/untitled-ontology-13#INC-001> <http://www.w3.org/2000/01/rdf-schema#comment> "Example incident instance." .
+<http://www.semanticweb.org/posy/ontologies/2026/2/untitled-ontology-13#INC-001> <http://www.w3.org/2000/01/rdf-schema#label> "INC-001" .
+# 
+# http://www.semanticweb.org/posy/ontologies/2026/2/untitled-ontology-13#Ireland
+<http://www.semanticweb.org/posy/ontologies/2026/2/untitled-ontology-13#Ireland> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://www.semanticweb.org/posy/ontologies/2026/2/untitled-ontology-13#Ireland> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.semanticweb.org/posy/ontologies/2026/2/untitled-ontology-13#Country> .
+<http://www.semanticweb.org/posy/ontologies/2026/2/untitled-ontology-13#Ireland> <http://www.w3.org/2000/01/rdf-schema#comment> "Country --> Ireland" .
+<http://www.semanticweb.org/posy/ontologies/2026/2/untitled-ontology-13#Ireland> <http://www.w3.org/2000/01/rdf-schema#label> "Ireland" .
+<http://www.semanticweb.org/posy/ontologies/2026/2/untitled-ontology-13#Ireland> <http://www.w3.org/2000/01/rdf-schema#seeAlso> "https://dbpedia.org/page/Ireland" .
+# 
+# http://www.semanticweb.org/posy/ontologies/2026/2/untitled-ontology-13#Low
+<http://www.semanticweb.org/posy/ontologies/2026/2/untitled-ontology-13#Low> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://www.semanticweb.org/posy/ontologies/2026/2/untitled-ontology-13#Low> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.semanticweb.org/posy/ontologies/2026/2/untitled-ontology-13#ProbabilityLevel> .
+<http://www.semanticweb.org/posy/ontologies/2026/2/untitled-ontology-13#Low> <http://www.w3.org/2000/01/rdf-schema#comment> "Probability level -> Low" .
+<http://www.semanticweb.org/posy/ontologies/2026/2/untitled-ontology-13#Low> <http://www.w3.org/2000/01/rdf-schema#label> "Low" .
+# 
+# http://www.semanticweb.org/posy/ontologies/2026/2/untitled-ontology-13#MAN-001
+<http://www.semanticweb.org/posy/ontologies/2026/2/untitled-ontology-13#MAN-001> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://www.semanticweb.org/posy/ontologies/2026/2/untitled-ontology-13#MAN-001> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.semanticweb.org/posy/ontologies/2026/2/untitled-ontology-13#Manufacturer> .
+<http://www.semanticweb.org/posy/ontologies/2026/2/untitled-ontology-13#MAN-001> <http://www.semanticweb.org/posy/ontologies/2026/2/untitled-ontology-13#locatedInCountry> <http://www.semanticweb.org/posy/ontologies/2026/2/untitled-ontology-13#Ireland> .
+<http://www.semanticweb.org/posy/ontologies/2026/2/untitled-ontology-13#MAN-001> <http://www.semanticweb.org/posy/ontologies/2026/2/untitled-ontology-13#hasManufacturerID> "MAN-001" .
+<http://www.semanticweb.org/posy/ontologies/2026/2/untitled-ontology-13#MAN-001> <http://www.semanticweb.org/posy/ontologies/2026/2/untitled-ontology-13#hasManufacturerName> "Medtronic plc" .
+<http://www.semanticweb.org/posy/ontologies/2026/2/untitled-ontology-13#MAN-001> <http://www.w3.org/2000/01/rdf-schema#comment> "Example manufacturer instance." .
+<http://www.semanticweb.org/posy/ontologies/2026/2/untitled-ontology-13#MAN-001> <http://www.w3.org/2000/01/rdf-schema#label> "MAN-001" .
+<http://www.semanticweb.org/posy/ontologies/2026/2/untitled-ontology-13#MAN-001> <http://www.w3.org/2000/01/rdf-schema#seeAlso> "https://dbpedia.org/page/Medtronic" .
+# 
+# http://www.semanticweb.org/posy/ontologies/2026/2/untitled-ontology-13#MDR
+<http://www.semanticweb.org/posy/ontologies/2026/2/untitled-ontology-13#MDR> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://www.semanticweb.org/posy/ontologies/2026/2/untitled-ontology-13#MDR> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.semanticweb.org/posy/ontologies/2026/2/untitled-ontology-13#RegulatoryFramework> .
+<http://www.semanticweb.org/posy/ontologies/2026/2/untitled-ontology-13#MDR> <http://www.w3.org/2000/01/rdf-schema#comment> "Regulatory framework -> MDR" .
+<http://www.semanticweb.org/posy/ontologies/2026/2/untitled-ontology-13#MDR> <http://www.w3.org/2000/01/rdf-schema#label> "MDR" .
+# 
+# http://www.semanticweb.org/posy/ontologies/2026/2/untitled-ontology-13#RSK-003
+<http://www.semanticweb.org/posy/ontologies/2026/2/untitled-ontology-13#RSK-003> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://www.semanticweb.org/posy/ontologies/2026/2/untitled-ontology-13#RSK-003> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.semanticweb.org/posy/ontologies/2026/2/untitled-ontology-13#Risk> .
+<http://www.semanticweb.org/posy/ontologies/2026/2/untitled-ontology-13#RSK-003> <http://www.semanticweb.org/posy/ontologies/2026/2/untitled-ontology-13#hasProbabilityLevel> <http://www.semanticweb.org/posy/ontologies/2026/2/untitled-ontology-13#Low> .
+<http://www.semanticweb.org/posy/ontologies/2026/2/untitled-ontology-13#RSK-003> <http://www.semanticweb.org/posy/ontologies/2026/2/untitled-ontology-13#hasSeverityLevel> <http://www.semanticweb.org/posy/ontologies/2026/2/untitled-ontology-13#Critical> .
+<http://www.semanticweb.org/posy/ontologies/2026/2/untitled-ontology-13#RSK-003> <http://www.semanticweb.org/posy/ontologies/2026/2/untitled-ontology-13#hasRiskID> "RSK-003" .
+<http://www.semanticweb.org/posy/ontologies/2026/2/untitled-ontology-13#RSK-003> <http://www.semanticweb.org/posy/ontologies/2026/2/untitled-ontology-13#hasRiskName> "Thrombosis" .
+<http://www.semanticweb.org/posy/ontologies/2026/2/untitled-ontology-13#RSK-003> <http://www.w3.org/2000/01/rdf-schema#comment> "Example risk instance." .
+<http://www.semanticweb.org/posy/ontologies/2026/2/untitled-ontology-13#RSK-003> <http://www.w3.org/2000/01/rdf-schema#label> "RSK-003" .
+# 
+# http://www.semanticweb.org/posy/ontologies/2026/2/untitled-ontology-13#Safety_alert
+<http://www.semanticweb.org/posy/ontologies/2026/2/untitled-ontology-13#Safety_alert> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://www.semanticweb.org/posy/ontologies/2026/2/untitled-ontology-13#Safety_alert> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.semanticweb.org/posy/ontologies/2026/2/untitled-ontology-13#ActionType> .
+<http://www.semanticweb.org/posy/ontologies/2026/2/untitled-ontology-13#Safety_alert> <http://www.w3.org/2000/01/rdf-schema#comment> "Action type -> Safety alert" .
+<http://www.semanticweb.org/posy/ontologies/2026/2/untitled-ontology-13#Safety_alert> <http://www.w3.org/2000/01/rdf-schema#label> "Safety alert" .
+# 
+# 
+# 
+# #################################################################
+# #
+# #    Rules
+# #
+# #################################################################
+# 
+# 
+<urn:swrl:var#f> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2003/11/swrl#Variable> .
+<urn:swrl:var#i> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2003/11/swrl#Variable> .
+<urn:swrl:var#d> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2003/11/swrl#Variable> .
+<urn:swrl:var#r> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2003/11/swrl#Variable> .
+<urn:swrl:var#m> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2003/11/swrl#Variable> .
+_:genid17 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2003/11/swrl#Imp> .
+_:genid17 <http://www.w3.org/2003/11/swrl#body> _:genid22 .
+_:genid22 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid20 .
+_:genid20 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid18 .
+_:genid18 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> <http://www.w3.org/1999/02/22-rdf-syntax-ns#nil> .
+_:genid18 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> _:genid19 .
+_:genid19 <http://www.w3.org/2003/11/swrl#argument2> <urn:swrl:var#r> .
+_:genid19 <http://www.w3.org/2003/11/swrl#argument1> <urn:swrl:var#i> .
+_:genid19 <http://www.w3.org/2003/11/swrl#propertyPredicate> <http://www.semanticweb.org/posy/ontologies/2026/2/untitled-ontology-13#hasRisk> .
+_:genid19 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2003/11/swrl#IndividualPropertyAtom> .
+_:genid18 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2003/11/swrl#AtomList> .
+_:genid20 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> _:genid21 .
+_:genid21 <http://www.w3.org/2003/11/swrl#argument2> <urn:swrl:var#d> .
+_:genid21 <http://www.w3.org/2003/11/swrl#argument1> <urn:swrl:var#i> .
+_:genid21 <http://www.w3.org/2003/11/swrl#propertyPredicate> <http://www.semanticweb.org/posy/ontologies/2026/2/untitled-ontology-13#affectsDevice> .
+_:genid21 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2003/11/swrl#IndividualPropertyAtom> .
+_:genid20 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2003/11/swrl#AtomList> .
+_:genid22 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> _:genid23 .
+_:genid23 <http://www.w3.org/2003/11/swrl#argument1> <urn:swrl:var#i> .
+_:genid23 <http://www.w3.org/2003/11/swrl#classPredicate> <http://www.semanticweb.org/posy/ontologies/2026/2/untitled-ontology-13#Incident> .
+_:genid23 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2003/11/swrl#ClassAtom> .
+_:genid22 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2003/11/swrl#AtomList> .
+_:genid17 <http://www.w3.org/2003/11/swrl#head> _:genid24 .
+_:genid24 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> <http://www.w3.org/1999/02/22-rdf-syntax-ns#nil> .
+_:genid24 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> _:genid25 .
+_:genid25 <http://www.w3.org/2003/11/swrl#argument2> <urn:swrl:var#r> .
+_:genid25 <http://www.w3.org/2003/11/swrl#argument1> <urn:swrl:var#d> .
+_:genid25 <http://www.w3.org/2003/11/swrl#propertyPredicate> <http://www.semanticweb.org/posy/ontologies/2026/2/untitled-ontology-13#deviceHasAssociatedRisk> .
+_:genid25 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2003/11/swrl#IndividualPropertyAtom> .
+_:genid24 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2003/11/swrl#AtomList> .
+_:genid26 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2003/11/swrl#Imp> .
+_:genid26 <http://www.w3.org/2003/11/swrl#body> _:genid31 .
+_:genid31 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid29 .
+_:genid29 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid27 .
+_:genid27 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> <http://www.w3.org/1999/02/22-rdf-syntax-ns#nil> .
+_:genid27 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> _:genid28 .
+_:genid28 <http://www.w3.org/2003/11/swrl#argument2> <urn:swrl:var#r> .
+_:genid28 <http://www.w3.org/2003/11/swrl#argument1> <urn:swrl:var#i> .
+_:genid28 <http://www.w3.org/2003/11/swrl#propertyPredicate> <http://www.semanticweb.org/posy/ontologies/2026/2/untitled-ontology-13#hasRisk> .
+_:genid28 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2003/11/swrl#IndividualPropertyAtom> .
+_:genid27 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2003/11/swrl#AtomList> .
+_:genid29 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> _:genid30 .
+_:genid30 <http://www.w3.org/2003/11/swrl#argument2> <urn:swrl:var#m> .
+_:genid30 <http://www.w3.org/2003/11/swrl#argument1> <urn:swrl:var#i> .
+_:genid30 <http://www.w3.org/2003/11/swrl#propertyPredicate> <http://www.semanticweb.org/posy/ontologies/2026/2/untitled-ontology-13#reportedBy> .
+_:genid30 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2003/11/swrl#IndividualPropertyAtom> .
+_:genid29 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2003/11/swrl#AtomList> .
+_:genid31 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> _:genid32 .
+_:genid32 <http://www.w3.org/2003/11/swrl#argument1> <urn:swrl:var#i> .
+_:genid32 <http://www.w3.org/2003/11/swrl#classPredicate> <http://www.semanticweb.org/posy/ontologies/2026/2/untitled-ontology-13#Incident> .
+_:genid32 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2003/11/swrl#ClassAtom> .
+_:genid31 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2003/11/swrl#AtomList> .
+_:genid26 <http://www.w3.org/2003/11/swrl#head> _:genid33 .
+_:genid33 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> <http://www.w3.org/1999/02/22-rdf-syntax-ns#nil> .
+_:genid33 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> _:genid34 .
+_:genid34 <http://www.w3.org/2003/11/swrl#argument2> <urn:swrl:var#r> .
+_:genid34 <http://www.w3.org/2003/11/swrl#argument1> <urn:swrl:var#m> .
+_:genid34 <http://www.w3.org/2003/11/swrl#propertyPredicate> <http://www.semanticweb.org/posy/ontologies/2026/2/untitled-ontology-13#manufacturerReportedRisk> .
+_:genid34 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2003/11/swrl#IndividualPropertyAtom> .
+_:genid33 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2003/11/swrl#AtomList> .
+_:genid8 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2003/11/swrl#Imp> .
+_:genid8 <http://www.w3.org/2003/11/swrl#body> _:genid13 .
+_:genid13 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid11 .
+_:genid11 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid9 .
+_:genid9 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> <http://www.w3.org/1999/02/22-rdf-syntax-ns#nil> .
+_:genid9 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> _:genid10 .
+_:genid10 <http://www.w3.org/2003/11/swrl#argument2> <urn:swrl:var#d> .
+_:genid10 <http://www.w3.org/2003/11/swrl#argument1> <urn:swrl:var#i> .
+_:genid10 <http://www.w3.org/2003/11/swrl#propertyPredicate> <http://www.semanticweb.org/posy/ontologies/2026/2/untitled-ontology-13#affectsDevice> .
+_:genid10 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2003/11/swrl#IndividualPropertyAtom> .
+_:genid9 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2003/11/swrl#AtomList> .
+_:genid11 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> _:genid12 .
+_:genid12 <http://www.w3.org/2003/11/swrl#argument2> <urn:swrl:var#i> .
+_:genid12 <http://www.w3.org/2003/11/swrl#argument1> <urn:swrl:var#f> .
+_:genid12 <http://www.w3.org/2003/11/swrl#propertyPredicate> <http://www.semanticweb.org/posy/ontologies/2026/2/untitled-ontology-13#relatesToIncident> .
+_:genid12 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2003/11/swrl#IndividualPropertyAtom> .
+_:genid11 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2003/11/swrl#AtomList> .
+_:genid13 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> _:genid14 .
+_:genid14 <http://www.w3.org/2003/11/swrl#argument1> <urn:swrl:var#f> .
+_:genid14 <http://www.w3.org/2003/11/swrl#classPredicate> <http://www.semanticweb.org/posy/ontologies/2026/2/untitled-ontology-13#FSCA> .
+_:genid14 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2003/11/swrl#ClassAtom> .
+_:genid13 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2003/11/swrl#AtomList> .
+_:genid8 <http://www.w3.org/2003/11/swrl#head> _:genid15 .
+_:genid15 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> <http://www.w3.org/1999/02/22-rdf-syntax-ns#nil> .
+_:genid15 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> _:genid16 .
+_:genid16 <http://www.w3.org/2003/11/swrl#argument2> <urn:swrl:var#d> .
+_:genid16 <http://www.w3.org/2003/11/swrl#argument1> <urn:swrl:var#f> .
+_:genid16 <http://www.w3.org/2003/11/swrl#propertyPredicate> <http://www.semanticweb.org/posy/ontologies/2026/2/untitled-ontology-13#targetDevice> .
+_:genid16 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2003/11/swrl#IndividualPropertyAtom> .
+_:genid15 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2003/11/swrl#AtomList> .
+# Generated by the OWL API (version 5.1.18) https://github.com/owlcs/owlapi/
