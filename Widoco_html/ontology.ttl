@@ -1,0 +1,922 @@
+@prefix : <http://www.semanticweb.org/posy/ontologies/2026/2/untitled-ontology-13#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix xml: <http://www.w3.org/XML/1998/namespace> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@base <http://www.semanticweb.org/posy/ontologies/2026/2/untitled-ontology-13#> .
+
+<http://www.semanticweb.org/posy/ontologies/2026/2/untitled-ontology-13> rdf:type owl:Ontology ;
+                                                                          rdfs:comment "Se procede a transformar las clases, propiedades de objeto, propiedades de datos, restricciones e instancias desarrollada en el apartado anterior. La implementación sigue los requisitos establecidos en la práctica, utilizando exclusivamente vocabulario en inglés y anotando todos los recursos mediante rdfs:label y rdfs:comment." ;
+                                                                          rdfs:label "European Medical Devices Vigilance And Control Ontology" .
+
+#################################################################
+#    Object Properties
+#################################################################
+
+###  http://www.semanticweb.org/posy/ontologies/2026/2/untitled-ontology-13#affectsDevice
+:affectsDevice rdf:type owl:ObjectProperty ,
+                        owl:FunctionalProperty ;
+               rdfs:domain :Incident ;
+               rdfs:range :MedicalDevice ;
+               rdfs:comment "Relates an incident to the medical device." ;
+               rdfs:label "affects devices" .
+
+
+###  http://www.semanticweb.org/posy/ontologies/2026/2/untitled-ontology-13#affectsDeviceType
+:affectsDeviceType rdf:type owl:ObjectProperty ;
+                   rdfs:domain :Risk ;
+                   rdfs:range :DeviceType ;
+                   rdfs:comment "Relates a risk to the type of devices that can be affected by it." ;
+                   rdfs:label "affects device type" .
+
+
+###  http://www.semanticweb.org/posy/ontologies/2026/2/untitled-ontology-13#deviceHasAssociatedRisk
+:deviceHasAssociatedRisk rdf:type owl:ObjectProperty ;
+                         rdfs:domain :MedicalDevice ;
+                         rdfs:range :Risk ;
+                         rdfs:comment "New Objecte create to resolve SRWL rules." ;
+                         rdfs:label "device has associated risk" .
+
+
+###  http://www.semanticweb.org/posy/ontologies/2026/2/untitled-ontology-13#hasActionType
+:hasActionType rdf:type owl:ObjectProperty ,
+                        owl:FunctionalProperty ;
+               rdfs:domain :FSCA ;
+               rdfs:range :ActionType ;
+               rdfs:comment "Relates a field safety corrective action to its action type." ;
+               rdfs:label "has action type" .
+
+
+###  http://www.semanticweb.org/posy/ontologies/2026/2/untitled-ontology-13#hasDeviceType
+:hasDeviceType rdf:type owl:ObjectProperty ;
+               rdfs:domain :MedicalDevice ;
+               rdfs:range :DeviceType ;
+               rdfs:comment "Relates a medical device to device type classification." ;
+               rdfs:label "has device type" .
+
+
+###  http://www.semanticweb.org/posy/ontologies/2026/2/untitled-ontology-13#hasIncidentType
+:hasIncidentType rdf:type owl:ObjectProperty ,
+                          owl:FunctionalProperty ;
+                 rdfs:domain :Incident ;
+                 rdfs:range :IncidentType ;
+                 rdfs:comment "Relates if an incident has a incident type." ;
+                 rdfs:label "has incident type" .
+
+
+###  http://www.semanticweb.org/posy/ontologies/2026/2/untitled-ontology-13#hasManufacturer
+:hasManufacturer rdf:type owl:ObjectProperty ,
+                          owl:FunctionalProperty ;
+                 rdfs:domain :MedicalDevice ;
+                 rdfs:range :Manufacturer ;
+                 rdfs:comment "Relates a medical device to its manufacturer." ;
+                 rdfs:label "has manufacturer" .
+
+
+###  http://www.semanticweb.org/posy/ontologies/2026/2/untitled-ontology-13#hasOutcomeType
+:hasOutcomeType rdf:type owl:ObjectProperty ,
+                         owl:FunctionalProperty ;
+                rdfs:domain :Incident ;
+                rdfs:range :OutcomeType ;
+                rdfs:comment "Relates an incident to the outcome classification associated with it." ;
+                rdfs:label "has outcome type" .
+
+
+###  http://www.semanticweb.org/posy/ontologies/2026/2/untitled-ontology-13#hasPatientSex
+:hasPatientSex rdf:type owl:ObjectProperty ,
+                        owl:FunctionalProperty ;
+               rdfs:domain :Incident ;
+               rdfs:range :PatientSex ;
+               rdfs:comment "Relates an incident to the sex category of the affected patient." ;
+               rdfs:label "has patient sex" .
+
+
+###  http://www.semanticweb.org/posy/ontologies/2026/2/untitled-ontology-13#hasProbabilityLevel
+:hasProbabilityLevel rdf:type owl:ObjectProperty ,
+                              owl:FunctionalProperty ;
+                     rdfs:domain :Risk ;
+                     rdfs:range :ProbabilityLevel ;
+                     rdfs:comment "Relates a risk to its probability level." ;
+                     rdfs:label "has probability level" .
+
+
+###  http://www.semanticweb.org/posy/ontologies/2026/2/untitled-ontology-13#hasRisk
+:hasRisk rdf:type owl:ObjectProperty ;
+         rdfs:domain :Incident ;
+         rdfs:range :Risk ;
+         rdfs:comment "Relates an incident to the risk associated." ;
+         rdfs:label "has risk" .
+
+
+###  http://www.semanticweb.org/posy/ontologies/2026/2/untitled-ontology-13#hasRiskCategory
+:hasRiskCategory rdf:type owl:ObjectProperty ;
+                 rdfs:subPropertyOf owl:topObjectProperty ;
+                 rdf:type owl:FunctionalProperty ;
+                 rdfs:domain :Risk ;
+                 rdfs:range :RiskCategory ;
+                 rdfs:comment "Relates a risk to its risk category classification." ;
+                 rdfs:label "has risk category" .
+
+
+###  http://www.semanticweb.org/posy/ontologies/2026/2/untitled-ontology-13#hasRiskClass
+:hasRiskClass rdf:type owl:ObjectProperty ,
+                       owl:FunctionalProperty ;
+              rdfs:domain :MedicalDevice ;
+              rdfs:range :RiskClass ;
+              rdfs:comment "Relates a medical device to risk class." ;
+              rdfs:label "has risk class" .
+
+
+###  http://www.semanticweb.org/posy/ontologies/2026/2/untitled-ontology-13#hasRiskType
+:hasRiskType rdf:type owl:ObjectProperty ,
+                      owl:FunctionalProperty ;
+             rdfs:domain :Risk ;
+             rdfs:range :RiskType ;
+             rdfs:comment "Relates a risk to its risk type classification." ;
+             rdfs:label "has risk type" .
+
+
+###  http://www.semanticweb.org/posy/ontologies/2026/2/untitled-ontology-13#hasScope
+:hasScope rdf:type owl:ObjectProperty ,
+                   owl:FunctionalProperty ;
+          rdfs:domain :FSCA ;
+          rdfs:range :FSCAScope ;
+          rdfs:comment "Relates a field safety corrective action to its scope." ;
+          rdfs:label "has scope" .
+
+
+###  http://www.semanticweb.org/posy/ontologies/2026/2/untitled-ontology-13#hasSeverityLevel
+:hasSeverityLevel rdf:type owl:ObjectProperty ,
+                           owl:FunctionalProperty ;
+                  rdfs:domain :Risk ;
+                  rdfs:range :SeverityLevel ;
+                  rdfs:comment "Relates a risk to its severity level." ;
+                  rdfs:label "has severity level" .
+
+
+###  http://www.semanticweb.org/posy/ontologies/2026/2/untitled-ontology-13#hasStatus
+:hasStatus rdf:type owl:ObjectProperty ,
+                    owl:FunctionalProperty ;
+           rdfs:domain :FSCA ;
+           rdfs:range :FSCAStatus ;
+           rdfs:comment "Relates a field safety corrective action to its current status." ;
+           rdfs:label "has status" .
+
+
+###  http://www.semanticweb.org/posy/ontologies/2026/2/untitled-ontology-13#locatedInCountry
+:locatedInCountry rdf:type owl:ObjectProperty ,
+                           owl:FunctionalProperty ;
+                  rdfs:domain :Manufacturer ;
+                  rdfs:range :Country ;
+                  rdfs:comment "Relates a manufacturer to the country where it is located." ;
+                  rdfs:label "located in country" .
+
+
+###  http://www.semanticweb.org/posy/ontologies/2026/2/untitled-ontology-13#manufacturerReportedRisk
+:manufacturerReportedRisk rdf:type owl:ObjectProperty ;
+                          rdfs:domain :Manufacturer ;
+                          rdfs:range :Risk ;
+                          rdfs:comment "New Objecte create to resolve SRWL rules." ;
+                          rdfs:label "manufacturer reported risk" .
+
+
+###  http://www.semanticweb.org/posy/ontologies/2026/2/untitled-ontology-13#registeredWithAuthority
+:registeredWithAuthority rdf:type owl:ObjectProperty ,
+                                  owl:FunctionalProperty ;
+                         rdfs:domain :Manufacturer ;
+                         rdfs:range :CompetentAuthority ;
+                         rdfs:comment "Relates a manufacturer to the competent authority with which it is registered." ;
+                         rdfs:label "registered with authority" .
+
+
+###  http://www.semanticweb.org/posy/ontologies/2026/2/untitled-ontology-13#regulatedUnder
+:regulatedUnder rdf:type owl:ObjectProperty ,
+                         owl:FunctionalProperty ;
+                rdfs:domain :MedicalDevice ;
+                rdfs:range :RegulatoryFramework ;
+                rdfs:comment "Relates a medical devices to regulatory framework" ;
+                rdfs:label "regulated under" .
+
+
+###  http://www.semanticweb.org/posy/ontologies/2026/2/untitled-ontology-13#relatesToIncident
+:relatesToIncident rdf:type owl:ObjectProperty ,
+                            owl:FunctionalProperty ;
+                   rdfs:domain :FSCA ;
+                   rdfs:range :Incident ;
+                   rdfs:comment "Relates to incident of FSCA" ;
+                   rdfs:label "relates to incident" .
+
+
+###  http://www.semanticweb.org/posy/ontologies/2026/2/untitled-ontology-13#reportedBy
+:reportedBy rdf:type owl:ObjectProperty ,
+                     owl:FunctionalProperty ;
+            rdfs:domain :Incident ;
+            rdfs:range :Manufacturer ;
+            rdfs:comment "Relates a inicident to manufacturer." ;
+            rdfs:label "reported by" .
+
+
+###  http://www.semanticweb.org/posy/ontologies/2026/2/untitled-ontology-13#reportedInCountry
+:reportedInCountry rdf:type owl:ObjectProperty ;
+                   rdfs:subPropertyOf owl:topObjectProperty ;
+                   rdf:type owl:FunctionalProperty ;
+                   rdfs:domain :Incident ;
+                   rdfs:range :Country ;
+                   rdfs:comment "Relates a incident to the country where it was reported." ;
+                   rdfs:label "reported in country" .
+
+
+###  http://www.semanticweb.org/posy/ontologies/2026/2/untitled-ontology-13#targetDevice
+:targetDevice rdf:type owl:ObjectProperty ;
+              rdfs:domain :FSCA ;
+              rdfs:range :MedicalDevice ;
+              rdfs:comment "New Objecte create to resolve SRWL rules." ;
+              rdfs:label "target device" .
+
+
+#################################################################
+#    Data properties
+#################################################################
+
+###  http://www.semanticweb.org/posy/ontologies/2026/2/untitled-ontology-13#hasActionDate
+:hasActionDate rdf:type owl:DatatypeProperty ;
+               rdfs:domain :FSCA ;
+               rdfs:range xsd:dateTime ;
+               rdfs:comment "Stores the date on which a field safety corrective action was initiated." ;
+               rdfs:label "has action date" .
+
+
+###  http://www.semanticweb.org/posy/ontologies/2026/2/untitled-ontology-13#hasAuthorizationNumber
+:hasAuthorizationNumber rdf:type owl:DatatypeProperty ,
+                                 owl:FunctionalProperty ;
+                        rdfs:domain :Manufacturer ;
+                        rdfs:range xsd:string ;
+                        rdfs:comment "Stores the authorization number of a manufacturer." ;
+                        rdfs:label "has authorization number" .
+
+
+###  http://www.semanticweb.org/posy/ontologies/2026/2/untitled-ontology-13#hasClosureDate
+:hasClosureDate rdf:type owl:DatatypeProperty ;
+                rdfs:domain :FSCA ;
+                rdfs:range xsd:dateTime ;
+                rdfs:comment "Stores the closure date of a field safety corrective action." ;
+                rdfs:label "has closure date" .
+
+
+###  http://www.semanticweb.org/posy/ontologies/2026/2/untitled-ontology-13#hasContactEmail
+:hasContactEmail rdf:type owl:DatatypeProperty ;
+                 rdfs:domain :Manufacturer ;
+                 rdfs:range xsd:string ;
+                 rdfs:comment "Stores email of a manufacturer." ;
+                 rdfs:label "has contact email" .
+
+
+###  http://www.semanticweb.org/posy/ontologies/2026/2/untitled-ontology-13#hasCorrectiveActionTaken
+:hasCorrectiveActionTaken rdf:type owl:DatatypeProperty ,
+                                   owl:FunctionalProperty ;
+                          rdfs:domain :Incident ;
+                          rdfs:range xsd:boolean ;
+                          rdfs:comment "Indicates whether a corrective action has already been taken for an incident." ;
+                          rdfs:label "has corrective action taken" .
+
+
+###  http://www.semanticweb.org/posy/ontologies/2026/2/untitled-ontology-13#hasCountriesAffectedText
+:hasCountriesAffectedText rdf:type owl:DatatypeProperty ;
+                          rdfs:domain :FSCA ;
+                          rdfs:range xsd:string ;
+                          rdfs:comment "Stores the textual information about the countries affected by a field safety corrective action." ;
+                          rdfs:label "has countries affected text" .
+
+
+###  http://www.semanticweb.org/posy/ontologies/2026/2/untitled-ontology-13#hasDetectionDate
+:hasDetectionDate rdf:type owl:DatatypeProperty ;
+                  rdfs:domain :Incident ;
+                  rdfs:range xsd:dateTime ;
+                  rdfs:comment "Stores the date on which the incident event occurred." ;
+                  rdfs:label "has detection date" .
+
+
+###  http://www.semanticweb.org/posy/ontologies/2026/2/untitled-ontology-13#hasDeviceID
+:hasDeviceID rdf:type owl:DatatypeProperty ,
+                      owl:FunctionalProperty ;
+             rdfs:domain :MedicalDevice ;
+             rdfs:range xsd:string ;
+             rdfs:comment "Stores the identifier of a medical device." ;
+             rdfs:label "has device ID" .
+
+
+###  http://www.semanticweb.org/posy/ontologies/2026/2/untitled-ontology-13#hasDeviceName
+:hasDeviceName rdf:type owl:DatatypeProperty ;
+               rdfs:domain :MedicalDevice ;
+               rdfs:range xsd:string ;
+               rdfs:comment "Stores the commercial name of a medical device." ;
+               rdfs:label "has device name" .
+
+
+###  http://www.semanticweb.org/posy/ontologies/2026/2/untitled-ontology-13#hasDevicesAffectedCount
+:hasDevicesAffectedCount rdf:type owl:DatatypeProperty ;
+                         rdfs:domain :FSCA ;
+                         rdfs:range xsd:string ;
+                         rdfs:comment "Stores the number of devices affected by a field safety corrective action." ;
+                         rdfs:label "has devices affected count" .
+
+
+###  http://www.semanticweb.org/posy/ontologies/2026/2/untitled-ontology-13#hasEudamedFSCAReference
+:hasEudamedFSCAReference rdf:type owl:DatatypeProperty ,
+                                  owl:FunctionalProperty ;
+                         rdfs:domain :FSCA ;
+                         rdfs:range xsd:string ;
+                         rdfs:comment "Stores the EUDAMED reference code of a field safety corrective action." ;
+                         rdfs:label "has EUDAMED FSCA reference" .
+
+
+###  http://www.semanticweb.org/posy/ontologies/2026/2/untitled-ontology-13#hasEudamedIncidentReference
+:hasEudamedIncidentReference rdf:type owl:DatatypeProperty ,
+                                      owl:FunctionalProperty ;
+                             rdfs:domain :Incident ;
+                             rdfs:range xsd:string ;
+                             rdfs:comment "Stores the EUDAMED reference code of an incident." ;
+                             rdfs:label "has Eudamed incident reference" .
+
+
+###  http://www.semanticweb.org/posy/ontologies/2026/2/untitled-ontology-13#hasEudamedSRN
+:hasEudamedSRN rdf:type owl:DatatypeProperty ,
+                        owl:FunctionalProperty ;
+               rdfs:domain :Manufacturer ;
+               rdfs:range xsd:string ;
+               rdfs:comment "Stores  EUDAMED number of a manufacturer." ;
+               rdfs:label "has EUDAMED SRN" .
+
+
+###  http://www.semanticweb.org/posy/ontologies/2026/2/untitled-ontology-13#hasEventDate
+:hasEventDate rdf:type owl:DatatypeProperty ;
+              rdfs:domain :Incident ;
+              rdfs:range xsd:dateTime ;
+              rdfs:comment "Stores the date on which the incident event occurred." ;
+              rdfs:label "has event date" .
+
+
+###  http://www.semanticweb.org/posy/ontologies/2026/2/untitled-ontology-13#hasFSCADescription
+:hasFSCADescription rdf:type owl:DatatypeProperty ;
+                    rdfs:domain :FSCA ;
+                    rdfs:range xsd:string ;
+                    rdfs:comment "Stores the textual description of a field safety corrective action." ;
+                    rdfs:label "has FSCA description" .
+
+
+###  http://www.semanticweb.org/posy/ontologies/2026/2/untitled-ontology-13#hasFSCAID
+:hasFSCAID rdf:type owl:DatatypeProperty ,
+                    owl:FunctionalProperty ;
+           rdfs:domain :FSCA ;
+           rdfs:range xsd:string ;
+           rdfs:comment "Store FSCA ID." ;
+           rdfs:label "has FSCA ID" .
+
+
+###  http://www.semanticweb.org/posy/ontologies/2026/2/untitled-ontology-13#hasIMDRFCode
+:hasIMDRFCode rdf:type owl:DatatypeProperty ;
+              rdfs:domain :Risk ;
+              rdfs:range xsd:string ;
+              rdfs:comment "Stores the IMDRF code assigned to a risk." ;
+              rdfs:label "has IMDRF code" .
+
+
+###  http://www.semanticweb.org/posy/ontologies/2026/2/untitled-ontology-13#hasIncidentDescription
+:hasIncidentDescription rdf:type owl:DatatypeProperty ;
+                        rdfs:domain :Incident ;
+                        rdfs:range xsd:string ;
+                        rdfs:comment "Stores the textual description of an incident." ;
+                        rdfs:label "has incident description" .
+
+
+###  http://www.semanticweb.org/posy/ontologies/2026/2/untitled-ontology-13#hasIncidentID
+:hasIncidentID rdf:type owl:DatatypeProperty ,
+                        owl:FunctionalProperty ;
+               rdfs:domain :Incident ;
+               rdfs:range xsd:string ;
+               rdfs:comment "Stores the identifier of an incident." ;
+               rdfs:label "has incident ID" .
+
+
+###  http://www.semanticweb.org/posy/ontologies/2026/2/untitled-ontology-13#hasIntendedPurpose
+:hasIntendedPurpose rdf:type owl:DatatypeProperty ;
+                    rdfs:domain :MedicalDevice ;
+                    rdfs:range xsd:string ;
+                    rdfs:comment "Stores the intended purpose of a medical device." ;
+                    rdfs:label "has intended purpose" .
+
+
+###  http://www.semanticweb.org/posy/ontologies/2026/2/untitled-ontology-13#hasManufacturerID
+:hasManufacturerID rdf:type owl:DatatypeProperty ,
+                            owl:FunctionalProperty ;
+                   rdfs:domain :Manufacturer ;
+                   rdfs:range xsd:string ;
+                   rdfs:comment "Stores the identifier of a manufacturer." ;
+                   rdfs:label "has manufacturer ID" .
+
+
+###  http://www.semanticweb.org/posy/ontologies/2026/2/untitled-ontology-13#hasManufacturerName
+:hasManufacturerName rdf:type owl:DatatypeProperty ;
+                     rdfs:domain :Manufacturer ;
+                     rdfs:range xsd:string ;
+                     rdfs:comment "Stores manufacturer name." ;
+                     rdfs:label "has manufacturer name" .
+
+
+###  http://www.semanticweb.org/posy/ontologies/2026/2/untitled-ontology-13#hasPatientAge
+:hasPatientAge rdf:type owl:DatatypeProperty ;
+               rdfs:domain :Incident ;
+               rdfs:range xsd:integer ;
+               rdfs:comment "Stores the age of the patient involved in an incident." ;
+               rdfs:label "has patient age" .
+
+
+###  http://www.semanticweb.org/posy/ontologies/2026/2/untitled-ontology-13#hasReportDate
+:hasReportDate rdf:type owl:DatatypeProperty ,
+                        owl:FunctionalProperty ;
+               rdfs:domain :Incident ;
+               rdfs:range xsd:dateTime ;
+               rdfs:comment "Stores the report date of an incident." ;
+               rdfs:label "has report date" .
+
+
+###  http://www.semanticweb.org/posy/ontologies/2026/2/untitled-ontology-13#hasRiskDescription
+:hasRiskDescription rdf:type owl:DatatypeProperty ;
+                    rdfs:domain :Risk ;
+                    rdfs:range xsd:string ;
+                    rdfs:comment "Stores the textual description of a risk." ;
+                    rdfs:label "has risk description" .
+
+
+###  http://www.semanticweb.org/posy/ontologies/2026/2/untitled-ontology-13#hasRiskID
+:hasRiskID rdf:type owl:DatatypeProperty ,
+                    owl:FunctionalProperty ;
+           rdfs:domain :Risk ;
+           rdfs:range xsd:string ;
+           rdfs:comment "Stores the identifier of a risk." ;
+           rdfs:label "has risk ID" .
+
+
+###  http://www.semanticweb.org/posy/ontologies/2026/2/untitled-ontology-13#hasRiskName
+:hasRiskName rdf:type owl:DatatypeProperty ;
+             rdfs:domain :Risk ;
+             rdfs:range xsd:string ;
+             rdfs:comment "Stores the name of a risk." ;
+             rdfs:label "has risk name" .
+
+
+###  http://www.semanticweb.org/posy/ontologies/2026/2/untitled-ontology-13#hasUDIDI
+:hasUDIDI rdf:type owl:DatatypeProperty ,
+                   owl:FunctionalProperty ;
+          rdfs:domain :MedicalDevice ;
+          rdfs:range xsd:string ;
+          rdfs:comment "Stores the UDI-DI code of a medical device." ;
+          rdfs:label "has UDI-DI" .
+
+
+###  http://www.semanticweb.org/posy/ontologies/2026/2/untitled-ontology-13#isActive
+:isActive rdf:type owl:DatatypeProperty ,
+                   owl:FunctionalProperty ;
+          rdfs:domain :MedicalDevice ;
+          rdfs:range xsd:boolean ;
+          rdfs:comment "Indicates whether the medical device is active." ;
+          rdfs:label "is active" .
+
+
+###  http://www.semanticweb.org/posy/ontologies/2026/2/untitled-ontology-13#isIVD
+:isIVD rdf:type owl:DatatypeProperty ,
+                owl:FunctionalProperty ;
+       rdfs:domain :MedicalDevice ;
+       rdfs:range xsd:boolean ;
+       rdfs:comment "Indicates whether the medical device is an in vitro diagnostic device." ;
+       rdfs:label "is IVD" .
+
+
+###  http://www.semanticweb.org/posy/ontologies/2026/2/untitled-ontology-13#isImplantable
+:isImplantable rdf:type owl:DatatypeProperty ,
+                        owl:FunctionalProperty ;
+               rdfs:domain :MedicalDevice ;
+               rdfs:range xsd:boolean ;
+               rdfs:comment "Indicates whether the medical device is implantable." ;
+               rdfs:label "is implantable" .
+
+
+###  http://www.semanticweb.org/posy/ontologies/2026/2/untitled-ontology-13#isReusable
+:isReusable rdf:type owl:DatatypeProperty ,
+                     owl:FunctionalProperty ;
+            rdfs:domain :MedicalDevice ;
+            rdfs:range xsd:boolean ;
+            rdfs:comment "Indicates whether the medical device is reusable." ;
+            rdfs:label "is reusable" .
+
+
+#################################################################
+#    Classes
+#################################################################
+
+###  http://www.semanticweb.org/posy/ontologies/2026/2/untitled-ontology-13#ActionType
+:ActionType rdf:type owl:Class ;
+            rdfs:subClassOf :ClassificationEntity ;
+            rdfs:comment "Action type registration" ;
+            rdfs:label "Action type" .
+
+
+###  http://www.semanticweb.org/posy/ontologies/2026/2/untitled-ontology-13#AdministrativeEntity
+:AdministrativeEntity rdf:type owl:Class .
+
+
+###  http://www.semanticweb.org/posy/ontologies/2026/2/untitled-ontology-13#ClassificationEntity
+:ClassificationEntity rdf:type owl:Class .
+
+
+###  http://www.semanticweb.org/posy/ontologies/2026/2/untitled-ontology-13#CompetentAuthority
+:CompetentAuthority rdf:type owl:Class ;
+                    rdfs:subClassOf :AdministrativeEntity ;
+                    rdfs:comment "Competent authority registration" ;
+                    rdfs:label "Competent authority" .
+
+
+###  http://www.semanticweb.org/posy/ontologies/2026/2/untitled-ontology-13#Country
+:Country rdf:type owl:Class ;
+         rdfs:subClassOf :AdministrativeEntity ;
+         rdfs:comment "Country registration" ;
+         rdfs:label "Country" .
+
+
+###  http://www.semanticweb.org/posy/ontologies/2026/2/untitled-ontology-13#DeviceType
+:DeviceType rdf:type owl:Class ;
+            rdfs:subClassOf :ClassificationEntity ;
+            rdfs:comment "Device type registration" ;
+            rdfs:label "Device type" .
+
+
+###  http://www.semanticweb.org/posy/ontologies/2026/2/untitled-ontology-13#FSCA
+:FSCA rdf:type owl:Class ;
+      rdfs:subClassOf :MedicalEntity ,
+                      [ rdf:type owl:Restriction ;
+                        owl:onProperty :relatesToIncident ;
+                        owl:qualifiedCardinality "1"^^xsd:nonNegativeInteger ;
+                        owl:onClass :Incident
+                      ] ;
+      rdfs:comment "FSCA registration" ;
+      rdfs:label "FSCA" .
+
+
+###  http://www.semanticweb.org/posy/ontologies/2026/2/untitled-ontology-13#FSCAScope
+:FSCAScope rdf:type owl:Class ;
+           rdfs:subClassOf :ClassificationEntity ;
+           rdfs:comment "FSCA scope registration" ;
+           rdfs:label "FSCA scope" .
+
+
+###  http://www.semanticweb.org/posy/ontologies/2026/2/untitled-ontology-13#FSCAStatus
+:FSCAStatus rdf:type owl:Class ;
+            rdfs:subClassOf :ClassificationEntity ;
+            rdfs:comment "FSCA status registration" ;
+            rdfs:label "FSCA status" .
+
+
+###  http://www.semanticweb.org/posy/ontologies/2026/2/untitled-ontology-13#Incident
+:Incident rdf:type owl:Class ;
+          rdfs:subClassOf :MedicalEntity ,
+                          [ rdf:type owl:Restriction ;
+                            owl:onProperty :affectsDevice ;
+                            owl:qualifiedCardinality "1"^^xsd:nonNegativeInteger ;
+                            owl:onClass :MedicalDevice
+                          ] ;
+          rdfs:comment "Incident Registration" ;
+          rdfs:label "Incident" .
+
+
+###  http://www.semanticweb.org/posy/ontologies/2026/2/untitled-ontology-13#IncidentType
+:IncidentType rdf:type owl:Class ;
+              rdfs:subClassOf :ClassificationEntity ;
+              rdfs:comment "Incident type registration" ;
+              rdfs:label "Incident type" .
+
+
+###  http://www.semanticweb.org/posy/ontologies/2026/2/untitled-ontology-13#Manufacturer
+:Manufacturer rdf:type owl:Class ;
+              rdfs:subClassOf :MedicalEntity ;
+              rdfs:comment "A Manufacturer registration" ;
+              rdfs:label "Manufacturer" .
+
+
+###  http://www.semanticweb.org/posy/ontologies/2026/2/untitled-ontology-13#MedicalDevice
+:MedicalDevice rdf:type owl:Class ;
+               rdfs:subClassOf :MedicalEntity ,
+                               [ rdf:type owl:Restriction ;
+                                 owl:onProperty :hasManufacturer ;
+                                 owl:qualifiedCardinality "1"^^xsd:nonNegativeInteger ;
+                                 owl:onClass :Manufacturer
+                               ] ,
+                               [ rdf:type owl:Restriction ;
+                                 owl:onProperty :hasRiskClass ;
+                                 owl:qualifiedCardinality "1"^^xsd:nonNegativeInteger ;
+                                 owl:onClass :RiskClass
+                               ] ,
+                               [ rdf:type owl:Restriction ;
+                                 owl:onProperty :regulatedUnder ;
+                                 owl:qualifiedCardinality "1"^^xsd:nonNegativeInteger ;
+                                 owl:onClass :RegulatoryFramework
+                               ] ;
+               rdfs:comment "A medical device registered" ;
+               rdfs:label "Medical device" ;
+               rdfs:seeAlso "https://dbpedia.org/page/Medical_device" .
+
+
+###  http://www.semanticweb.org/posy/ontologies/2026/2/untitled-ontology-13#MedicalEntity
+:MedicalEntity rdf:type owl:Class .
+
+
+###  http://www.semanticweb.org/posy/ontologies/2026/2/untitled-ontology-13#OutcomeType
+:OutcomeType rdf:type owl:Class ;
+             rdfs:subClassOf :AdministrativeEntity ;
+             rdfs:comment "Outcome type registration" ;
+             rdfs:label "Outcome type" .
+
+
+###  http://www.semanticweb.org/posy/ontologies/2026/2/untitled-ontology-13#PatientSex
+:PatientSex rdf:type owl:Class ;
+            rdfs:subClassOf :AdministrativeEntity ;
+            rdfs:comment "Patient sex registration" ;
+            rdfs:label "Patient sex" .
+
+
+###  http://www.semanticweb.org/posy/ontologies/2026/2/untitled-ontology-13#ProbabilityLevel
+:ProbabilityLevel rdf:type owl:Class ;
+                  rdfs:subClassOf :ClassificationEntity ;
+                  rdfs:comment "Probability level registration" ;
+                  rdfs:label "Probability level" .
+
+
+###  http://www.semanticweb.org/posy/ontologies/2026/2/untitled-ontology-13#RegulatoryFramework
+:RegulatoryFramework rdf:type owl:Class ;
+                     rdfs:subClassOf :ClassificationEntity ;
+                     rdfs:comment "Regulatory framework registration" ;
+                     rdfs:label "Regulatory framework" .
+
+
+###  http://www.semanticweb.org/posy/ontologies/2026/2/untitled-ontology-13#Risk
+:Risk rdf:type owl:Class ;
+      rdfs:subClassOf :MedicalEntity ,
+                      [ rdf:type owl:Restriction ;
+                        owl:onProperty :hasProbabilityLevel ;
+                        owl:qualifiedCardinality "1"^^xsd:nonNegativeInteger ;
+                        owl:onClass :ProbabilityLevel
+                      ] ,
+                      [ rdf:type owl:Restriction ;
+                        owl:onProperty :hasSeverityLevel ;
+                        owl:qualifiedCardinality "1"^^xsd:nonNegativeInteger ;
+                        owl:onClass :SeverityLevel
+                      ] ;
+      rdfs:comment "Risk" ;
+      rdfs:label "Risk" .
+
+
+###  http://www.semanticweb.org/posy/ontologies/2026/2/untitled-ontology-13#RiskCategory
+:RiskCategory rdf:type owl:Class ;
+              rdfs:subClassOf :ClassificationEntity ;
+              rdfs:comment "Risk category registration" ;
+              rdfs:label "Risk category" .
+
+
+###  http://www.semanticweb.org/posy/ontologies/2026/2/untitled-ontology-13#RiskClass
+:RiskClass rdf:type owl:Class ;
+           rdfs:subClassOf :ClassificationEntity ;
+           rdfs:comment "Risk class registration" ;
+           rdfs:label "Risk class" .
+
+
+###  http://www.semanticweb.org/posy/ontologies/2026/2/untitled-ontology-13#RiskType
+:RiskType rdf:type owl:Class ;
+          rdfs:subClassOf :ClassificationEntity ;
+          rdfs:comment "Risk type registration" ;
+          rdfs:label "Risk type" .
+
+
+###  http://www.semanticweb.org/posy/ontologies/2026/2/untitled-ontology-13#SeverityLevel
+:SeverityLevel rdf:type owl:Class ;
+               rdfs:subClassOf :ClassificationEntity ;
+               rdfs:comment "Severity level registration" ;
+               rdfs:label "Severity level" .
+
+
+#################################################################
+#    Individuals
+#################################################################
+
+###  http://www.semanticweb.org/posy/ontologies/2026/2/untitled-ontology-13#Class_III
+:Class_III rdf:type owl:NamedIndividual ,
+                    :RiskClass ;
+           rdfs:comment "Risk class -> Class III" ;
+           rdfs:label "Class III" .
+
+
+###  http://www.semanticweb.org/posy/ontologies/2026/2/untitled-ontology-13#Critical
+:Critical rdf:type owl:NamedIndividual ,
+                   :SeverityLevel ;
+          rdfs:comment "Severity level -> Critical" ;
+          rdfs:label "Critical" .
+
+
+###  http://www.semanticweb.org/posy/ontologies/2026/2/untitled-ontology-13#DEV-001
+:DEV-001 rdf:type owl:NamedIndividual ,
+                  :MedicalDevice ;
+         :hasManufacturer :MAN-001 ;
+         :hasRiskClass :Class_III ;
+         :regulatedUnder :MDR ;
+         :hasDeviceID "DEV-001" ;
+         :hasDeviceName "HeartMate 3 LVAD" ;
+         :isActive "true"^^xsd:boolean ;
+         :isImplantable "true"^^xsd:boolean ;
+         :isReusable "false"^^xsd:boolean ;
+         rdfs:comment "Example medical device instance." ;
+         rdfs:label "DEV-001" .
+
+
+###  http://www.semanticweb.org/posy/ontologies/2026/2/untitled-ontology-13#FSCA-001
+:FSCA-001 rdf:type owl:NamedIndividual ,
+                   :FSCA ;
+          :hasActionType :Safety_alert ;
+          :relatesToIncident :INC-001 ;
+          :hasFSCAID "FSCA-001" ;
+          rdfs:comment "Example FSCA instance." ;
+          rdfs:label "FSCA-001" .
+
+
+###  http://www.semanticweb.org/posy/ontologies/2026/2/untitled-ontology-13#INC-001
+:INC-001 rdf:type owl:NamedIndividual ,
+                  :Incident ;
+         :affectsDevice :DEV-001 ;
+         :hasRisk :RSK-003 ;
+         :reportedBy :MAN-001 ;
+         :hasIncidentDescription "Incident related to thrombosis." ;
+         :hasIncidentID "INC-001" ;
+         rdfs:comment "Example incident instance." ;
+         rdfs:label "INC-001" .
+
+
+###  http://www.semanticweb.org/posy/ontologies/2026/2/untitled-ontology-13#Ireland
+:Ireland rdf:type owl:NamedIndividual ,
+                  :Country ;
+         rdfs:comment "Country --> Ireland" ;
+         rdfs:label "Ireland" ;
+         rdfs:seeAlso "https://dbpedia.org/page/Ireland" .
+
+
+###  http://www.semanticweb.org/posy/ontologies/2026/2/untitled-ontology-13#Low
+:Low rdf:type owl:NamedIndividual ,
+              :ProbabilityLevel ;
+     rdfs:comment "Probability level -> Low" ;
+     rdfs:label "Low" .
+
+
+###  http://www.semanticweb.org/posy/ontologies/2026/2/untitled-ontology-13#MAN-001
+:MAN-001 rdf:type owl:NamedIndividual ,
+                  :Manufacturer ;
+         :locatedInCountry :Ireland ;
+         :hasManufacturerID "MAN-001" ;
+         :hasManufacturerName "Medtronic plc" ;
+         rdfs:comment "Example manufacturer instance." ;
+         rdfs:label "MAN-001" ;
+         rdfs:seeAlso "https://dbpedia.org/page/Medtronic" .
+
+
+###  http://www.semanticweb.org/posy/ontologies/2026/2/untitled-ontology-13#MDR
+:MDR rdf:type owl:NamedIndividual ,
+              :RegulatoryFramework ;
+     rdfs:comment "Regulatory framework -> MDR" ;
+     rdfs:label "MDR" .
+
+
+###  http://www.semanticweb.org/posy/ontologies/2026/2/untitled-ontology-13#RSK-003
+:RSK-003 rdf:type owl:NamedIndividual ,
+                  :Risk ;
+         :hasProbabilityLevel :Low ;
+         :hasSeverityLevel :Critical ;
+         :hasRiskID "RSK-003" ;
+         :hasRiskName "Thrombosis" ;
+         rdfs:comment "Example risk instance." ;
+         rdfs:label "RSK-003" .
+
+
+###  http://www.semanticweb.org/posy/ontologies/2026/2/untitled-ontology-13#Safety_alert
+:Safety_alert rdf:type owl:NamedIndividual ,
+                       :ActionType ;
+              rdfs:comment "Action type -> Safety alert" ;
+              rdfs:label "Safety alert" .
+
+
+#################################################################
+#    Rules
+#################################################################
+
+<urn:swrl:var#f> rdf:type <http://www.w3.org/2003/11/swrl#Variable> .
+
+<urn:swrl:var#i> rdf:type <http://www.w3.org/2003/11/swrl#Variable> .
+
+<urn:swrl:var#d> rdf:type <http://www.w3.org/2003/11/swrl#Variable> .
+
+<urn:swrl:var#r> rdf:type <http://www.w3.org/2003/11/swrl#Variable> .
+
+<urn:swrl:var#m> rdf:type <http://www.w3.org/2003/11/swrl#Variable> .
+
+[ rdf:type <http://www.w3.org/2003/11/swrl#Imp> ;
+   <http://www.w3.org/2003/11/swrl#body> [ rdf:type <http://www.w3.org/2003/11/swrl#AtomList> ;
+                                           rdf:first [ rdf:type <http://www.w3.org/2003/11/swrl#ClassAtom> ;
+                                                       <http://www.w3.org/2003/11/swrl#classPredicate> :Incident ;
+                                                       <http://www.w3.org/2003/11/swrl#argument1> <urn:swrl:var#i>
+                                                     ] ;
+                                           rdf:rest [ rdf:type <http://www.w3.org/2003/11/swrl#AtomList> ;
+                                                      rdf:first [ rdf:type <http://www.w3.org/2003/11/swrl#IndividualPropertyAtom> ;
+                                                                  <http://www.w3.org/2003/11/swrl#propertyPredicate> :affectsDevice ;
+                                                                  <http://www.w3.org/2003/11/swrl#argument1> <urn:swrl:var#i> ;
+                                                                  <http://www.w3.org/2003/11/swrl#argument2> <urn:swrl:var#d>
+                                                                ] ;
+                                                      rdf:rest [ rdf:type <http://www.w3.org/2003/11/swrl#AtomList> ;
+                                                                 rdf:first [ rdf:type <http://www.w3.org/2003/11/swrl#IndividualPropertyAtom> ;
+                                                                             <http://www.w3.org/2003/11/swrl#propertyPredicate> :hasRisk ;
+                                                                             <http://www.w3.org/2003/11/swrl#argument1> <urn:swrl:var#i> ;
+                                                                             <http://www.w3.org/2003/11/swrl#argument2> <urn:swrl:var#r>
+                                                                           ] ;
+                                                                 rdf:rest rdf:nil
+                                                               ]
+                                                    ]
+                                         ] ;
+   <http://www.w3.org/2003/11/swrl#head> [ rdf:type <http://www.w3.org/2003/11/swrl#AtomList> ;
+                                           rdf:first [ rdf:type <http://www.w3.org/2003/11/swrl#IndividualPropertyAtom> ;
+                                                       <http://www.w3.org/2003/11/swrl#propertyPredicate> :deviceHasAssociatedRisk ;
+                                                       <http://www.w3.org/2003/11/swrl#argument1> <urn:swrl:var#d> ;
+                                                       <http://www.w3.org/2003/11/swrl#argument2> <urn:swrl:var#r>
+                                                     ] ;
+                                           rdf:rest rdf:nil
+                                         ]
+ ] .
+
+[ rdf:type <http://www.w3.org/2003/11/swrl#Imp> ;
+   <http://www.w3.org/2003/11/swrl#body> [ rdf:type <http://www.w3.org/2003/11/swrl#AtomList> ;
+                                           rdf:first [ rdf:type <http://www.w3.org/2003/11/swrl#ClassAtom> ;
+                                                       <http://www.w3.org/2003/11/swrl#classPredicate> :Incident ;
+                                                       <http://www.w3.org/2003/11/swrl#argument1> <urn:swrl:var#i>
+                                                     ] ;
+                                           rdf:rest [ rdf:type <http://www.w3.org/2003/11/swrl#AtomList> ;
+                                                      rdf:first [ rdf:type <http://www.w3.org/2003/11/swrl#IndividualPropertyAtom> ;
+                                                                  <http://www.w3.org/2003/11/swrl#propertyPredicate> :reportedBy ;
+                                                                  <http://www.w3.org/2003/11/swrl#argument1> <urn:swrl:var#i> ;
+                                                                  <http://www.w3.org/2003/11/swrl#argument2> <urn:swrl:var#m>
+                                                                ] ;
+                                                      rdf:rest [ rdf:type <http://www.w3.org/2003/11/swrl#AtomList> ;
+                                                                 rdf:first [ rdf:type <http://www.w3.org/2003/11/swrl#IndividualPropertyAtom> ;
+                                                                             <http://www.w3.org/2003/11/swrl#propertyPredicate> :hasRisk ;
+                                                                             <http://www.w3.org/2003/11/swrl#argument1> <urn:swrl:var#i> ;
+                                                                             <http://www.w3.org/2003/11/swrl#argument2> <urn:swrl:var#r>
+                                                                           ] ;
+                                                                 rdf:rest rdf:nil
+                                                               ]
+                                                    ]
+                                         ] ;
+   <http://www.w3.org/2003/11/swrl#head> [ rdf:type <http://www.w3.org/2003/11/swrl#AtomList> ;
+                                           rdf:first [ rdf:type <http://www.w3.org/2003/11/swrl#IndividualPropertyAtom> ;
+                                                       <http://www.w3.org/2003/11/swrl#propertyPredicate> :manufacturerReportedRisk ;
+                                                       <http://www.w3.org/2003/11/swrl#argument1> <urn:swrl:var#m> ;
+                                                       <http://www.w3.org/2003/11/swrl#argument2> <urn:swrl:var#r>
+                                                     ] ;
+                                           rdf:rest rdf:nil
+                                         ]
+ ] .
+
+[ rdf:type <http://www.w3.org/2003/11/swrl#Imp> ;
+   <http://www.w3.org/2003/11/swrl#body> [ rdf:type <http://www.w3.org/2003/11/swrl#AtomList> ;
+                                           rdf:first [ rdf:type <http://www.w3.org/2003/11/swrl#ClassAtom> ;
+                                                       <http://www.w3.org/2003/11/swrl#classPredicate> :FSCA ;
+                                                       <http://www.w3.org/2003/11/swrl#argument1> <urn:swrl:var#f>
+                                                     ] ;
+                                           rdf:rest [ rdf:type <http://www.w3.org/2003/11/swrl#AtomList> ;
+                                                      rdf:first [ rdf:type <http://www.w3.org/2003/11/swrl#IndividualPropertyAtom> ;
+                                                                  <http://www.w3.org/2003/11/swrl#propertyPredicate> :relatesToIncident ;
+                                                                  <http://www.w3.org/2003/11/swrl#argument1> <urn:swrl:var#f> ;
+                                                                  <http://www.w3.org/2003/11/swrl#argument2> <urn:swrl:var#i>
+                                                                ] ;
+                                                      rdf:rest [ rdf:type <http://www.w3.org/2003/11/swrl#AtomList> ;
+                                                                 rdf:first [ rdf:type <http://www.w3.org/2003/11/swrl#IndividualPropertyAtom> ;
+                                                                             <http://www.w3.org/2003/11/swrl#propertyPredicate> :affectsDevice ;
+                                                                             <http://www.w3.org/2003/11/swrl#argument1> <urn:swrl:var#i> ;
+                                                                             <http://www.w3.org/2003/11/swrl#argument2> <urn:swrl:var#d>
+                                                                           ] ;
+                                                                 rdf:rest rdf:nil
+                                                               ]
+                                                    ]
+                                         ] ;
+   <http://www.w3.org/2003/11/swrl#head> [ rdf:type <http://www.w3.org/2003/11/swrl#AtomList> ;
+                                           rdf:first [ rdf:type <http://www.w3.org/2003/11/swrl#IndividualPropertyAtom> ;
+                                                       <http://www.w3.org/2003/11/swrl#propertyPredicate> :targetDevice ;
+                                                       <http://www.w3.org/2003/11/swrl#argument1> <urn:swrl:var#f> ;
+                                                       <http://www.w3.org/2003/11/swrl#argument2> <urn:swrl:var#d>
+                                                     ] ;
+                                           rdf:rest rdf:nil
+                                         ]
+ ] .
+
+###  Generated by the OWL API (version 5.1.18) https://github.com/owlcs/owlapi/
